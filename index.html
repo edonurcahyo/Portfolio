@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="home.title">Hendrikus Christianto N. Olmedo — Software / Web Developer</title>
+<meta name="description" content="Portofolio Hendrikus Christianto N. Olmedo, fresh graduate Informatika ITATS yang berfokus pada pengembangan web full-stack dengan Laravel &amp; React.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="reg-mark tl"></div>
+<div class="reg-mark tr"></div>
+<div class="reg-mark bl"></div>
+<div class="reg-mark br"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">HO</span>
+      <span class="brand-name"><b>Hendrikus</b> Olmedo</span>
+    </a>
+    <div class="topbar-right">
+      <div class="lang-toggle" role="group" aria-label="Ganti bahasa / Switch language">
+        <span class="lang-opt" data-lang="id">ID</span><span class="lang-opt" data-lang="en">EN</span>
+      </div>
+      <button class="nav-toggle" aria-label="Buka menu"><span></span></button>
+    </div>
+    <nav class="navsheets">
+      <a href="index.html" class="is-active"><span class="sheetno">01</span><span data-i18n="nav.home">Home</span></a>
+      <a href="projects.html"><span class="sheetno">02</span><span data-i18n="nav.projects">Projects</span></a>
+      <a href="contact.html"><span class="sheetno">03</span><span data-i18n="nav.contact">Contact</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="sheet">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="home.eyebrow">Software / Web Developer — Surabaya, ID</span>
+      <h1 data-i18n-html="home.hero.h1">Merancang &amp; membangun<br>aplikasi web, <span class="accent">dari cetak biru<br>sampai produksi.</span></h1>
+      <p class="role" data-i18n="home.hero.role">Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatika ITATS</p>
+      <p class="lede" data-i18n-html="home.hero.lede">Fresh graduate Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.50) dengan fondasi kuat di full-stack web development memakai Laravel &amp; React mulai dari desain sistem, REST API, hingga antarmuka yang siap dipakai pengguna.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn primary"><span data-i18n="home.hero.cta1">Lihat Proyek</span> <span class="arrow">→</span></a>
+        <a href="contact.html" class="btn" data-i18n="home.hero.cta2">Hubungi Saya</a>
+      </div>
+    </div>
+
+    <div class="hero-drawing reveal">
+      <span class="frame-label">FIG. 01 — SYSTEM OVERVIEW</span>
+      <span class="frame-label br">SCALE 1:1</span>
+      <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+        <!-- browser window -->
+        <rect class="draw-dim" x="30" y="30" width="420" height="300" rx="6" fill="none" stroke-width="1"/>
+        <line class="draw-dim" x1="30" y1="66" x2="450" y2="66" stroke-width="1"/>
+        <circle class="draw-line" cx="50" cy="48" r="4"/>
+        <circle class="draw-line delay1" cx="65" cy="48" r="4"/>
+        <circle class="draw-line delay2" cx="80" cy="48" r="4"/>
+        <rect class="draw-dim" x="160" y="40" width="230" height="16" rx="8" fill="none" stroke-width="1"/>
+
+        <!-- sidebar -->
+        <line class="draw-dim" x1="120" y1="66" x2="120" y2="330" stroke-width="1"/>
+        <rect class="draw-line delay1" x="42" y="84" width="60" height="10" rx="2" fill="none"/>
+        <rect class="draw-line delay1" x="42" y="106" width="60" height="10" rx="2" fill="none"/>
+        <rect class="draw-line delay1" x="42" y="128" width="60" height="10" rx="2" fill="none"/>
+        <rect class="draw-line delay1" x="42" y="150" width="40" height="10" rx="2" fill="none"/>
+
+        <!-- content cards -->
+        <rect class="draw-line delay2" x="140" y="86" width="140" height="70" rx="4" fill="none"/>
+        <rect class="draw-line delay2" x="292" y="86" width="140" height="70" rx="4" fill="none"/>
+        <line class="draw-dim" x1="152" y1="106" x2="252" y2="106" stroke-width="1"/>
+        <line class="draw-dim" x1="152" y1="120" x2="230" y2="120" stroke-width="1"/>
+        <line class="draw-dim" x1="304" y1="106" x2="404" y2="106" stroke-width="1"/>
+        <line class="draw-dim" x1="304" y1="120" x2="382" y2="120" stroke-width="1"/>
+
+        <!-- bar chart -->
+        <rect class="draw-line delay3" x="140" y="176" width="292" height="130" rx="4" fill="none"/>
+        <line class="draw-dim" x1="160" y1="286" x2="410" y2="286" stroke-width="1"/>
+        <rect class="draw-line delay3" x="176" y="230" width="18" height="56"/>
+        <rect class="draw-line delay3" x="212" y="210" width="18" height="76"/>
+        <rect class="draw-line delay3" x="248" y="246" width="18" height="40"/>
+        <rect class="draw-line delay3" x="284" y="196" width="18" height="90"/>
+        <rect class="draw-line delay3" x="320" y="224" width="18" height="62"/>
+        <rect class="draw-line delay3" x="356" y="206" width="18" height="80"/>
+        <rect class="draw-line delay3" x="392" y="238" width="18" height="48"/>
+
+        <!-- dimension leader -->
+        <line class="draw-dim" x1="30" y1="345" x2="450" y2="345" stroke-width="1"/>
+        <line class="draw-dim" x1="30" y1="340" x2="30" y2="350" stroke-width="1"/>
+        <line class="draw-dim" x1="450" y1="340" x2="450" y2="350" stroke-width="1"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="section specs reveal">
+    <div class="spec">
+      <span class="tag" data-i18n="home.spec1.tag">◇ PENDIDIKAN</span>
+      <span class="val">ITATS</span>
+      <span class="sub" data-i18n-html="home.spec1.sub">S1 Teknik Informatika · 2022–2026 · IPK 3.50/4.00</span>
+    </div>
+    <div class="spec">
+      <span class="tag" data-i18n="home.spec2.tag">◇ FOKUS</span>
+      <span class="val" data-i18n="home.spec2.val">Full-Stack Web</span>
+      <span class="sub" data-i18n-html="home.spec2.sub">Laravel (backend &amp; REST API) + React/TypeScript (frontend)</span>
+    </div>
+    <div class="spec">
+      <span class="tag" data-i18n="home.spec3.tag">◇ LOKASI</span>
+      <span class="val">Surabaya, ID</span>
+      <span class="sub" data-i18n="home.spec3.sub">Terbuka untuk kerja remote maupun on-site</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section two-col reveal">
+    <div>
+      <span class="eyebrow" data-i18n="home.about.eyebrow">Tentang</span>
+      <h2 data-i18n="home.about.h2">Profil Singkat</h2>
+    </div>
+    <div>
+      <p class="lede" style="max-width:64ch;" data-i18n-html="home.about.p">
+        Saya seorang fresh graduate Informatika yang terbiasa membangun aplikasi web dari nol
+        mulai dari analisis kebutuhan dan perancangan sistem, sampai implementasi backend dan
+        antarmuka pengguna. Skripsi dan proyek mandiri saya dikembangkan dengan model
+        <em>Prototype</em>: rancang, uji, dan revisi berulang sampai sistemnya benar-benar
+        pas dengan kebutuhan pengguna. Terbiasa dengan PHP, TypeScript, dan JavaScript, dan
+        cepat beradaptasi dengan bahasa lain seperti Python, Java, dan C++. Sekarang siap
+        berkontribusi sebagai Software/Web Developer dan terus berkembang di lingkungan kerja
+        profesional.
+      </p>
+    </div>
+  </section>
+
+  <!-- STACK / BOM -->
+  <section class="section reveal">
+    <span class="eyebrow" data-i18n="home.stack.eyebrow">Spesifikasi Teknis</span>
+    <h2 style="margin-bottom:26px;" data-i18n="home.stack.h2">Tech Stack</h2>
+    <div class="bom">
+      <div class="bom-row">
+        <div class="bom-key" data-i18n="home.stack.k1">Bahasa Pemrograman</div>
+        <div class="bom-val">
+          <span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">C++</span>
+        </div>
+      </div>
+      <div class="bom-row">
+        <div class="bom-key" data-i18n-html="home.stack.k2">Framework &amp; Library</div>
+        <div class="bom-val"><span class="chip">Laravel</span><span class="chip">React</span></div>
+      </div>
+      <div class="bom-row">
+        <div class="bom-key" data-i18n="home.stack.k3">Database</div>
+        <div class="bom-val"><span class="chip">MySQL</span></div>
+      </div>
+      <div class="bom-row">
+        <div class="bom-key" data-i18n-html="home.stack.k4">Tools &amp; Lainnya</div>
+        <div class="bom-val">
+          <span class="chip">Git &amp; GitHub</span><span class="chip">REST API</span><span class="chip">Prototype Method (SDLC)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section reveal" style="border-bottom:none;">
+    <div class="cta-strip">
+      <div>
+        <h3 data-i18n="home.cta.h3">Lihat proyek yang sudah dibangun</h3>
+        <p data-i18n="home.cta.p">Dua sheet proyek lengkap dengan detail teknis ada di halaman Projects.</p>
+      </div>
+      <a href="projects.html" class="btn primary"><span data-i18n="home.cta.btn">Buka Projects</span> <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="titleblock">
+  <div class="titleblock-inner">
+    <div class="tb-cell name">
+      <span class="lbl" data-i18n="tb.name.lbl">Nama</span>
+      <span class="val">Hendrikus Christianto N. Olmedo</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.sheet.lbl">Sheet</span>
+      <span class="val" data-i18n="tb.sheet.home">01 / 03 — Home</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.role.lbl">Peran</span>
+      <span class="val" data-i18n="tb.role.val">Software / Web Dev</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.rev.lbl">Rev.</span>
+      <span class="val">2026</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.contact.lbl">Kontak</span>
+      <span class="val tb-social">
+        <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="contact.html" aria-label="Contact">Email</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

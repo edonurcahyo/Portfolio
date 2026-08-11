@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="projects.title">Projects — Hendrikus C. N. Olmedo</title>
+<meta name="description" content="Detail proyek Hendrikus C. N. Olmedo: aplikasi reservasi barbershop berbasis web dan sistem pencatatan inventaris & keuangan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="reg-mark tl"></div>
+<div class="reg-mark tr"></div>
+<div class="reg-mark bl"></div>
+<div class="reg-mark br"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">HO</span>
+      <span class="brand-name"><b>Hendrikus</b> Olmedo</span>
+    </a>
+    <div class="topbar-right">
+      <div class="lang-toggle" role="group" aria-label="Ganti bahasa / Switch language">
+        <span class="lang-opt" data-lang="id">ID</span><span class="lang-opt" data-lang="en">EN</span>
+      </div>
+      <button class="nav-toggle" aria-label="Buka menu"><span></span></button>
+    </div>
+    <nav class="navsheets">
+      <a href="index.html"><span class="sheetno">01</span><span data-i18n="nav.home">Home</span></a>
+      <a href="projects.html" class="is-active"><span class="sheetno">02</span><span data-i18n="nav.projects">Projects</span></a>
+      <a href="contact.html"><span class="sheetno">03</span><span data-i18n="nav.contact">Contact</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="sheet">
+
+  <section class="page-hero reveal">
+    <span class="eyebrow" data-i18n="projects.eyebrow">Sheet 02 — Projects</span>
+    <h1 data-i18n="projects.h1">Dua proyek, dua studi kasus.</h1>
+    <p data-i18n-html="projects.p">Skripsi dan proyek mandiri yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna. Gambar di bawah adalah sketsa skematik pengganti tangkapan layar.</p>
+  </section>
+
+  <!-- PROJECT 1 -->
+  <section class="reveal">
+    <div class="project-sheet">
+      <div class="project-sheet-head">
+        <div>
+          <span class="project-kicker">PROJECT NO. 01 · THESIS PROJECT</span>
+          <h3>Web-Based Haircut Service<br>Reservation Application</h3>
+          <span class="project-kicker" data-i18n="p1.subtitle">Seniman Barbershop</span>
+        </div>
+        <span class="stamp">MODEL: PROTOTYPE</span>
+      </div>
+      <div class="project-sheet-body">
+        <div class="col">
+          <svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg">
+            <rect class="draw-dim" x="20" y="20" width="440" height="300" rx="6" fill="none" stroke-width="1"/>
+            <!-- calendar header -->
+            <rect class="draw-line" x="44" y="46" width="392" height="34" rx="3" fill="none"/>
+            <line class="draw-dim" x1="44" y1="80" x2="436" y2="80" stroke-width="1"/>
+            <!-- calendar grid -->
+            <g class="draw-line delay1">
+              <rect x="44" y="80" width="56" height="180" fill="none"/>
+              <rect x="100" y="80" width="56" height="180" fill="none"/>
+              <rect x="156" y="80" width="56" height="180" fill="none"/>
+              <rect x="212" y="80" width="56" height="180" fill="none"/>
+              <rect x="268" y="80" width="56" height="180" fill="none"/>
+              <rect x="324" y="80" width="56" height="180" fill="none"/>
+              <rect x="380" y="80" width="56" height="180" fill="none"/>
+            </g>
+            <!-- selected slot -->
+            <rect class="draw-line delay2" x="212" y="140" width="56" height="40" fill="none" stroke-width="2"/>
+            <circle class="draw-line delay2" cx="240" cy="160" r="4"/>
+            <!-- booking card -->
+            <rect class="draw-line delay3" x="44" y="272" width="392" height="34" rx="4" fill="none"/>
+            <line class="draw-dim" x1="60" y1="289" x2="220" y2="289" stroke-width="1"/>
+            <rect class="draw-line delay3" x="360" y="279" width="60" height="20" rx="10" fill="none"/>
+          </svg>
+        </div>
+        <div class="col">
+          <p style="color:var(--ink-dim); font-size:14.5px; margin-top:0;" data-i18n-html="p1.desc">
+            Aplikasi reservasi jasa potong rambut berbasis web, dirancang &amp; dibangun dari
+            analisis kebutuhan, desain sistem, sampai pengujian menggunakan model Prototype.
+          </p>
+          <ul>
+            <li data-i18n-html="p1.li1">Membangun backend dengan Laravel (PHP) &amp; REST API untuk mengelola data reservasi, jadwal, dan layanan barbershop.</li>
+            <li data-i18n-html="p1.li2">Membangun antarmuka responsif dengan React &amp; TypeScript untuk pengalaman booking yang mudah dipakai pelanggan.</li>
+            <li data-i18n="p1.li3">Merancang skema database MySQL agar proses reservasi efisien dan minim bentrok jadwal.</li>
+          </ul>
+          <div class="bom" style="margin-top:18px;">
+            <div class="bom-row">
+              <div class="bom-key">Stack</div>
+              <div class="bom-val">
+                <span class="chip">Laravel</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">PHP</span><span class="chip">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener" data-i18n="projects.link">↳ Lihat repositori di GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT 2 -->
+  <section class="reveal">
+    <div class="project-sheet">
+      <div class="project-sheet-head">
+        <div>
+          <span class="project-kicker">PROJECT NO. 02 · INDEPENDENT PROJECT</span>
+          <h3>Inventory &amp; Financial<br>Record-Keeping System</h3>
+          <span class="project-kicker" data-i18n-html="p2.subtitle">Sistem Pencatatan Keuangan &amp; Inventaris</span>
+        </div>
+        <span class="stamp">MODEL: PROTOTYPE</span>
+      </div>
+      <div class="project-sheet-body">
+        <div class="col">
+          <svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg">
+            <rect class="draw-dim" x="20" y="20" width="440" height="300" rx="6" fill="none" stroke-width="1"/>
+            
+            <!-- summary cards -->
+            <rect class="draw-line" x="44" y="46" width="120" height="60" rx="4" fill="none"/>
+            <rect class="draw-line delay1" x="180" y="46" width="120" height="60" rx="4" fill="none"/>
+            <rect class="draw-line delay2" x="316" y="46" width="120" height="60" rx="4" fill="none"/>
+            
+            <!-- summary card lines -->
+            <line class="draw-dim" x1="58" y1="66" x2="120" y2="66" stroke-width="1"/>
+            <line class="draw-dim" x1="58" y1="80" x2="100" y2="80" stroke-width="1"/>
+            <line class="draw-dim" x1="194" y1="66" x2="256" y2="66" stroke-width="1"/>
+            <line class="draw-dim" x1="194" y1="80" x2="236" y2="80" stroke-width="1"/>
+            <line class="draw-dim" x1="330" y1="66" x2="392" y2="66" stroke-width="1"/>
+            <line class="draw-dim" x1="330" y1="80" x2="372" y2="80" stroke-width="1"/>
+            
+            <!-- table -->
+            <rect class="draw-dim" x="44" y="128" width="392" height="150" fill="none" stroke-width="1"/>
+            <line class="draw-dim" x1="44" y1="156" x2="436" y2="156" stroke-width="1"/>
+            <line class="draw-dim" x1="44" y1="184" x2="436" y2="184" stroke-width="1"/>
+            <line class="draw-dim" x1="44" y1="212" x2="436" y2="212" stroke-width="1"/>
+            <line class="draw-dim" x1="44" y1="240" x2="436" y2="240" stroke-width="1"/>
+            <line class="draw-dim" x1="220" y1="128" x2="220" y2="278" stroke-width="1"/>
+            <line class="draw-dim" x1="340" y1="128" x2="340" y2="278" stroke-width="1"/>
+            
+            <!-- table data bars (INI YANG HARUS PUNYA draw-line) -->
+            <g class="draw-line delay3">
+              <rect x="60" y="164" width="120" height="8" fill="none"/>
+              <rect x="60" y="192" width="120" height="8" fill="none"/>
+              <rect x="60" y="220" width="120" height="8" fill="none"/>
+              <rect x="60" y="248" width="90" height="8" fill="none"/>
+            </g>
+            
+            <!-- report line chart -->
+            <polyline class="draw-line delay3" points="44,306 110,296 176,300 242,288 308,294 374,282 436,288" fill="none"/>
+          </svg>
+        </div>
+        <div class="col">
+          <p style="color:var(--ink-dim); font-size:14.5px; margin-top:0;" data-i18n="p2.desc">
+            Sistem berbasis web untuk mencatat transaksi keuangan harian, bulanan, dan
+            tahunan, dilengkapi rekap laporan otomatis.
+          </p>
+          <ul>
+            <li data-i18n="p2.li1">Membangun sistem pencatatan transaksi keuangan (harian/bulanan/tahunan) menggunakan Laravel.</li>
+            <li data-i18n="p2.li2">Mengimplementasikan fitur pelaporan otomatis untuk mendukung rekapitulasi data keuangan secara berkala.</li>
+          </ul>
+          <div class="bom" style="margin-top:18px;">
+            <div class="bom-row">
+              <div class="bom-key">Stack</div>
+              <div class="bom-val">
+                <span class="chip">Laravel</span><span class="chip">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener" data-i18n="projects.link">↳ Lihat repositori di GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" style="border-bottom:none; padding-top:0;">
+    <div class="cta-strip">
+      <div>
+        <h3 data-i18n="projects.cta.h3">Tertarik berdiskusi lebih lanjut?</h3>
+        <p data-i18n="projects.cta.p">Saya terbuka untuk peluang Software/Web Developer, remote maupun on-site.</p>
+      </div>
+      <a href="contact.html" class="btn primary"><span data-i18n="projects.cta.btn">Hubungi Saya</span> <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="titleblock">
+  <div class="titleblock-inner">
+    <div class="tb-cell name">
+      <span class="lbl" data-i18n="tb.name.lbl">Nama</span>
+      <span class="val">Hendrikus Christianto N. Olmedo</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.sheet.lbl">Sheet</span>
+      <span class="val" data-i18n="tb.sheet.projects">02 / 03 — Projects</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.role.lbl">Peran</span>
+      <span class="val" data-i18n="tb.role.val">Software / Web Dev</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.rev.lbl">Rev.</span>
+      <span class="val">2026</span>
+    </div>
+    <div class="tb-cell">
+      <span class="lbl" data-i18n="tb.contact.lbl">Kontak</span>
+      <span class="val tb-social">
+        <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="contact.html" aria-label="Contact">Email</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
