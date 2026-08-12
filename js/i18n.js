@@ -76,7 +76,20 @@ const translations = {
     "p2.li2": "Mengimplementasikan fitur pelaporan otomatis untuk mendukung rekapitulasi data keuangan secara berkala.",
 
     "p3.subtitle": "Platform Berbagi &amp; Eksplorasi Resep Makanan",
+    "p3.desc": "Platform berbagi dan eksplorasi resep makanan dengan fitur pencarian, bookmark, dan manajemen resep (CRUD) yang dibangun dengan PHP Native dan MySQL.",
+    "p3.li1": "Membangun sistem manajemen resep dengan operasi CRUD (Create, Read, Update, Delete) menggunakan PHP Native.",
+    "p3.li2": "Mengimplementasikan fitur pencarian resep berdasarkan kategori dan kata kunci.",
+    "p3.li3": "Membuat sistem bookmark untuk menyimpan resep favorit pengguna.",
+    "p3.li4": "Merancang database MySQL untuk menyimpan data resep, kategori, dan bookmark pengguna.",
+    "p3.stack": "Stack",
+
     "p4.subtitle": "Sistem Manajemen WiFi",
+    "p4.desc": "Sistem manajemen WiFi berbasis web dengan fitur autentikasi, manajemen pengguna berbasis role, monitoring jaringan, dan dashboard analitik, dibangun dengan Laravel 10 dan Tailwind CSS.",
+    "p4.li1": "Membangun sistem autentikasi dan manajemen pengguna dengan role (Admin, Operator, User) menggunakan Laravel Breeze.",
+    "p4.li2": "Mengimplementasikan dashboard analitik dengan grafik interaktif untuk monitoring jaringan WiFi.",
+    "p4.li3": "Membangun fitur manajemen titik akses WiFi dan pencatatan log koneksi pengguna.",
+    "p4.li4": "Merancang database MySQL dengan Eloquent ORM untuk pengelolaan data yang efisien.",
+    "p4.stack": "Stack",
 
     "projects.link": "↳ Lihat repositori di GitHub",
 
@@ -170,7 +183,20 @@ const translations = {
     "p2.li2": "Implemented automated reporting features to support periodic financial data recaps.",
 
     "p3.subtitle": "Food Recipe Sharing & Exploration Platform",
+    "p3.desc": "A platform for sharing and exploring food recipes with search, bookmark, and recipe management (CRUD) features, built with PHP Native and MySQL.",
+    "p3.li1": "Built a recipe management system with CRUD operations (Create, Read, Update, Delete) using PHP Native.",
+    "p3.li2": "Implemented recipe search functionality based on categories and keywords.",
+    "p3.li3": "Created a bookmark system for users to save their favorite recipes.",
+    "p3.li4": "Designed a MySQL database to store recipe data, categories, and user bookmarks.",
+    "p3.stack": "Stack",
+
     "p4.subtitle": "WiFi Management System",
+    "p4.desc": "A web-based WiFi management system with authentication, role-based user management, network monitoring, and analytical dashboard, built with Laravel 10 and Tailwind CSS.",
+    "p4.li1": "Built authentication and user management system with roles (Admin, Operator, User) using Laravel Breeze.",
+    "p4.li2": "Implemented an analytical dashboard with interactive charts for WiFi network monitoring.",
+    "p4.li3": "Built WiFi access point management and user connection log tracking features.",
+    "p4.li4": "Designed a MySQL database with Eloquent ORM for efficient data management.",
+    "p4.stack": "Stack",
 
     "projects.link": "↳ View repository on GitHub",
 
