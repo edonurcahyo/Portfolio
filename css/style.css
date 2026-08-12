@@ -591,6 +591,16 @@ h1, h2, h3{
 .tb-social{ display:flex; gap: 12px; }
 .tb-social a{ color: var(--ink-dim); transition: color .15s ease; }
 .tb-social a:hover{ color: var(--accent); }
+/* Hover spesifik untuk masing-masing platform */
+.tb-social a[aria-label="GitHub"]:hover {
+  color: #ffffff; 
+}
+.tb-social a[aria-label="Contact"]:hover {
+  color: #ec2917; 
+}
+.tb-social a[aria-label="Instagram"]:hover {
+  color: #da5870; 
+}
 
 @media (max-width: 900px){
   .hero{ grid-template-columns: 1fr; }

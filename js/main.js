@@ -26,20 +26,35 @@ if ('IntersectionObserver' in window && revealEls.length) {
   revealEls.forEach(el => el.classList.add('is-visible'));
 }
 
-// ---- contact form -> mailto ----
+// ---- contact form -> Gmail compose (fix untuk Windows) ----
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    
     const name = document.getElementById('cf-name').value.trim();
     const email = document.getElementById('cf-email').value.trim();
     const message = document.getElementById('cf-message').value.trim();
-    const subject = encodeURIComponent(`Portfolio contact — ${name || 'no name'}`);
+    
+    // Validasi sederhana
+    if (!name || !email || !message) {
+      alert('Harap isi semua field!');
+      return;
+    }
+    
+    // Encode untuk URL
+    const subject = encodeURIComponent(`Portfolio contact — ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:edonurcahyo25@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Buka Gmail compose di tab baru
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=edonurcahyo25@gmail.com&su=${subject}&body=${body}`;
+    window.open(gmailUrl, '_blank');
+    
+    // Opsional: reset form
+    // contactForm.reset();
   });
 }
 
-// ---- current year (not currently displayed, kept for future use) ----
+// ---- current year ----
 const yearEl = document.getElementById('current-year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();

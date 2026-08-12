@@ -19,7 +19,7 @@ const translations = {
     /* home */
     "home.title": "Hendrikus Christianto N. Olmedo — Software / Web Developer",
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
-    "home.hero.h1": "Merancang &amp; membangun<br>aplikasi web, <span class=\"accent\">dari cetak biru<br>sampai produksi.</span>",
+    "home.hero.h1": "Merancang &amp; membangun<br>aplikasi web, <span class=\"accent\">dari konsep<br>sampai produksi.</span>",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatika ITATS",
     "home.hero.lede": "Fresh graduate Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.50) dengan fondasi kuat di full-stack web development memakai Laravel &amp; React mulai dari desain sistem, REST API, hingga antarmuka yang siap dipakai pengguna.",
     "home.hero.cta1": "Lihat Proyek",
@@ -35,7 +35,7 @@ const translations = {
 
     "home.about.eyebrow": "Tentang",
     "home.about.h2": "Profil Singkat",
-    "home.about.p": "Saya seorang fresh graduate Informatika yang terbiasa membangun aplikasi web dari nol mulai dari analisis kebutuhan dan perancangan sistem, sampai implementasi backend dan antarmuka pengguna. Skripsi dan proyek mandiri saya dikembangkan dengan model <em>Prototype</em>: rancang, uji, dan revisi berulang sampai sistemnya benar-benar pas dengan kebutuhan pengguna. Terbiasa dengan PHP, TypeScript, dan JavaScript, dan cepat beradaptasi dengan bahasa lain seperti Python, Java, dan C++. Sekarang siap berkontribusi sebagai Software/Web Developer dan terus berkembang di lingkungan kerja profesional.",
+    "home.about.p": "Saya <strong style=\"color:#e8a53d;\">Hendrikus</strong>, <strong style=\"color:#e8a53d;\">fresh graduate S1 Teknik Informatika ITATS</strong> yang memiliki ketertarikan pada pengembangan aplikasi web dan software development. Saya terbiasa membangun aplikasi dari tahap <strong style=\"color:#59d6e0;\">analisis kebutuhan, perancangan, prototyping, implementasi, hingga pengujian</strong>. Melalui skripsi dan proyek mandiri, saya memiliki pengalaman mengembangkan aplikasi web <strong style=\"color:#59d6e0;\">full-stack</strong> menggunakan <strong style=\"color:#59d6e0;\">Laravel</strong> dan <strong style=\"color:#59d6e0;\">React</strong>, serta bekerja dengan <strong style=\"color:#59d6e0;\">PHP</strong>, <strong style=\"color:#59d6e0;\">JavaScript</strong>, dan <strong style=\"color:#59d6e0;\">TypeScript</strong>. Saya juga memiliki pengalaman menggunakan <strong style=\"color:#59d6e0;\">MySQL</strong> serta memahami dasar perancangan database dan pengujian aplikasi. Saat ini saya terbuka untuk kesempatan sebagai <strong style=\"color:#e8a53d;\">Software Developer, Web Developer, atau Full-Stack Developer</strong> dan terus mengembangkan kemampuan untuk memberikan kontribusi dalam tim.",
 
     "home.stack.eyebrow": "Spesifikasi Teknis",
     "home.stack.h2": "Tech Stack",
@@ -45,7 +45,7 @@ const translations = {
     "home.stack.k4": "Tools &amp; Lainnya",
 
     "home.cta.h3": "Lihat proyek yang sudah dibangun",
-    "home.cta.p": "Dua sheet proyek lengkap dengan detail teknis ada di halaman Projects.",
+    "home.cta.p": "Empat sheet proyek lengkap dengan detail teknis ada di halaman Projects.",
     "home.cta.btn": "Buka Projects",
 
     "tb.name.lbl": "Nama",
@@ -61,19 +61,22 @@ const translations = {
     /* projects page */
     "projects.title": "Projects — Hendrikus Christianto N. Olmedo",
     "projects.eyebrow": "Sheet 02 — Proyek",
-    "projects.h1": "Dua proyek, dua studi kasus.",
+    "projects.h1": "Empat proyek, empat studi kasus.",
     "projects.p": "Skripsi dan proyek mandiri yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna. Gambar di bawah adalah sketsa skematik pengganti tangkapan layar.",
 
-    "p1.subtitle": "Seniman Barbershop",
-    "p1.desc": "Aplikasi reservasi jasa potong rambut berbasis web, dirancang &amp; dibangun dari analisis kebutuhan, desain sistem, sampai pengujian menggunakan model Prototype.",
-    "p1.li1": "Membangun backend dengan Laravel (PHP) &amp; REST API untuk mengelola data reservasi, jadwal, dan layanan barbershop.",
-    "p1.li2": "Membangun antarmuka responsif dengan React &amp; TypeScript untuk pengalaman booking yang mudah dipakai pelanggan.",
-    "p1.li3": "Merancang skema database MySQL agar proses reservasi efisien dan minim bentrok jadwal.",
+    "p1.subtitle": "Sistem Manajemen Reservasi Potong Rambut",
+    "p1.desc": "Aplikasi reservasi jasa potong rambut berbasis web dengan arsitektur terpisah antara backend API dan frontend. Dibangun dari analisis kebutuhan, desain sistem, sampai pengujian menggunakan model Prototype.",
+    "p1.li1": "Membangun REST API dengan Laravel (PHP) untuk mengelola data reservasi, jadwal, layanan, dan autentikasi pengguna.",
+    "p1.li2": "Membangun antarmuka pengguna dengan React &amp; TypeScript yang responsif dan mudah digunakan untuk pelanggan.",
+    "p1.li3": "Merancang skema database MySQL untuk reservasi yang efisien dengan perlindungan dari bentrok jadwal.",
 
     "p2.subtitle": "Sistem Pencatatan Keuangan &amp; Inventaris",
     "p2.desc": "Sistem berbasis web untuk mencatat transaksi keuangan harian, bulanan, dan tahunan, dilengkapi rekap laporan otomatis.",
     "p2.li1": "Membangun sistem pencatatan transaksi keuangan (harian/bulanan/tahunan) menggunakan Laravel.",
     "p2.li2": "Mengimplementasikan fitur pelaporan otomatis untuk mendukung rekapitulasi data keuangan secara berkala.",
+
+    "p3.subtitle": "Platform Berbagi &amp; Eksplorasi Resep Makanan",
+    "p4.subtitle": "Sistem Manajemen WiFi",
 
     "projects.link": "↳ Lihat repositori di GitHub",
 
@@ -111,7 +114,7 @@ const translations = {
 
     "home.title": "Hendrikus C. N. Olmedo — Software / Web Developer",
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
-    "home.hero.h1": "Designing &amp; building<br>web applications, <span class=\"accent\">from blueprint<br>to production.</span>",
+    "home.hero.h1": "Designing &amp; building<br>web applications, <span class=\"accent\">from concept<br>to production.</span>",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatics Engineering, ITATS",
     "home.hero.lede": "Fresh graduate in Informatics Engineering from Institut Teknologi Adhi Tama Surabaya (GPA 3.50) with a strong foundation in full-stack web development using Laravel &amp; React from system design and REST APIs through to interfaces people can actually use.",
     "home.hero.cta1": "View Projects",
@@ -127,7 +130,7 @@ const translations = {
 
     "home.about.eyebrow": "About",
     "home.about.h2": "Short Profile",
-    "home.about.p": "I'm a fresh Informatics graduate used to building web applications from the ground up from requirements analysis and system design through to backend implementation and user interfaces. My thesis and independent project were both developed with the <em>Prototype</em> model: draft, test, and revise repeatedly until the system truly fits the user's needs. Comfortable with PHP, TypeScript, and JavaScript, and quick to pick up other languages such as Python, Java, and C++. Ready to contribute as a Software/Web Developer and keep growing in a professional environment.",
+    "home.about.p": "I'm <strong style=\"color:#e8a53d;\">Hendrikus</strong>, a <strong style=\"color:#e8a53d;\">fresh graduate with a Bachelor's degree in Informatics from ITATS</strong>, with a strong interest in web development and software engineering. I'm experienced in building applications through the stages of <strong style=\"color:#59d6e0;\">requirements analysis, design, prototyping, implementation, and testing</strong>. Through my thesis and personal projects, I have developed <strong style=\"color:#59d6e0;\">full-stack</strong> web applications using <strong style=\"color:#59d6e0;\">Laravel</strong> and <strong style=\"color:#59d6e0;\">React</strong>, with experience in <strong style=\"color:#59d6e0;\">PHP</strong>, <strong style=\"color:#59d6e0;\">JavaScript</strong>, and <strong style=\"color:#59d6e0;\">TypeScript</strong>. I also have experience working with <strong style=\"color:#59d6e0;\">MySQL</strong> and a solid understanding of database design and application testing. I'm currently open to opportunities as a <strong style=\"color:#e8a53d;\">Software Developer, Web Developer, or Full-Stack Developer</strong>, where I can continue growing my skills and contribute effectively to a team.",
 
     "home.stack.eyebrow": "Technical Specification",
     "home.stack.h2": "Tech Stack",
@@ -137,7 +140,7 @@ const translations = {
     "home.stack.k4": "Tools &amp; Other",
 
     "home.cta.h3": "See the projects I've built",
-    "home.cta.p": "Two full project sheets with technical detail live on the Projects page.",
+    "home.cta.p": "Four full project sheets with technical detail live on the Projects page.",
     "home.cta.btn": "Open Projects",
 
     "tb.name.lbl": "Name",
@@ -152,19 +155,22 @@ const translations = {
 
     "projects.title": "Projects — Hendrikus Christianto N. Olmedo",
     "projects.eyebrow": "Sheet 02 — Projects",
-    "projects.h1": "Two projects, two case studies.",
-    "projects.p": "A thesis and an independent project, both designed &amp; built solo from database design to the user interface. The drawings below are schematic sketches standing in for real screenshots.",
+    "projects.h1": "Four projects, four case studies.",
+    "projects.p": "Thesis and independent projects designed &amp; built solo, from database design to the user interface. The drawings below are schematic sketches standing in for real screenshots.",
 
-    "p1.subtitle": "Seniman Barbershop",
-    "p1.desc": "A web-based haircut service reservation application, designed &amp; built from requirements analysis and system design through to testing using the Prototype model.",
-    "p1.li1": "Built the backend with Laravel (PHP) &amp; a REST API to manage reservation data, schedules, and barbershop services.",
-    "p1.li2": "Built a responsive interface with React &amp; TypeScript for an easy-to-use customer booking experience.",
+    "p1.subtitle": "Haircut Service Reservation Management System",
+    "p1.desc": "A web-based haircut service reservation application with a separate backend API and frontend architecture. Built from requirements analysis and system design through to testing using the Prototype model.",
+    "p1.li1": "Built a REST API with Laravel (PHP) to manage reservation data, schedules, services, and user authentication.",
+    "p1.li2": "Built a responsive user interface with React &amp; TypeScript that is easy to use for customers.",
     "p1.li3": "Designed the MySQL database schema for an efficient reservation process with minimal schedule conflicts.",
 
     "p2.subtitle": "Inventory &amp; Financial Record-Keeping System",
     "p2.desc": "A web-based system for recording daily, monthly, and yearly financial transactions, with automated report recaps.",
     "p2.li1": "Built a system for recording financial transactions (daily/monthly/yearly) using Laravel.",
     "p2.li2": "Implemented automated reporting features to support periodic financial data recaps.",
+
+    "p3.subtitle": "Food Recipe Sharing & Exploration Platform",
+    "p4.subtitle": "WiFi Management System",
 
     "projects.link": "↳ View repository on GitHub",
 
