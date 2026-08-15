@@ -26,32 +26,60 @@ if ('IntersectionObserver' in window && revealEls.length) {
   revealEls.forEach(el => el.classList.add('is-visible'));
 }
 
-// ---- contact form -> Gmail compose (fix untuk Windows) ----
+// ---- lightbox (klik gambar untuk memperbesar) ----
+const lightboxOverlay = document.createElement('div');
+lightboxOverlay.className = 'lightbox-overlay';
+lightboxOverlay.style.display = 'none';
+
+const lightboxImg = document.createElement('img');
+lightboxOverlay.appendChild(lightboxImg);
+document.body.appendChild(lightboxOverlay);
+
+// Buka lightbox saat gambar diklik
+document.querySelectorAll('.screenshot-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const img = this.querySelector('.project-screenshot');
+    if (img) {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || 'Screenshot diperbesar';
+      lightboxOverlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  });
+});
+
+// Tutup lightbox saat klik overlay atau tombol ESC
+lightboxOverlay.addEventListener('click', function() {
+  this.style.display = 'none';
+  document.body.style.overflow = '';
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    lightboxOverlay.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+});
+
+// ---- contact form -> Gmail compose ----
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
     const name = document.getElementById('cf-name').value.trim();
     const email = document.getElementById('cf-email').value.trim();
     const message = document.getElementById('cf-message').value.trim();
-    
-    // Validasi sederhana
+
     if (!name || !email || !message) {
       alert('Harap isi semua field!');
       return;
     }
-    
-    // Encode untuk URL
+
     const subject = encodeURIComponent(`Portfolio contact — ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    
-    // Buka Gmail compose di tab baru
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=edonurcahyo25@gmail.com&su=${subject}&body=${body}`;
     window.open(gmailUrl, '_blank');
-    
-    // Opsional: reset form
-    // contactForm.reset();
   });
 }
 

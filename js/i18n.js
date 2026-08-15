@@ -64,6 +64,8 @@ const translations = {
     "projects.h1": "Empat proyek, empat studi kasus.",
     "projects.p": "Skripsi dan proyek mandiri yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna. Gambar di bawah adalah sketsa skematik pengganti tangkapan layar.",
 
+    "screenshot.label": "↳ Klik untuk perbesar",
+
     "p1.subtitle": "Sistem Manajemen Reservasi Potong Rambut",
     "p1.desc": "Aplikasi reservasi jasa potong rambut berbasis web dengan arsitektur terpisah antara backend API dan frontend. Dibangun dari analisis kebutuhan, desain sistem, sampai pengujian menggunakan model Prototype.",
     "p1.li1": "Membangun REST API dengan Laravel (PHP) untuk mengelola data reservasi, jadwal, layanan, dan autentikasi pengguna.",
@@ -170,6 +172,8 @@ const translations = {
     "projects.eyebrow": "Sheet 02 — Projects",
     "projects.h1": "Four projects, four case studies.",
     "projects.p": "Thesis and independent projects designed &amp; built solo, from database design to the user interface. The drawings below are schematic sketches standing in for real screenshots.",
+
+    "screenshot.label": "↳ Click to enlarge",
 
     "p1.subtitle": "Haircut Service Reservation Management System",
     "p1.desc": "A web-based haircut service reservation application with a separate backend API and frontend architecture. Built from requirements analysis and system design through to testing using the Prototype model.",
