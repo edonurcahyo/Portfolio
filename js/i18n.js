@@ -21,7 +21,7 @@ const translations = {
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
     "home.hero.h1": "Merancang &amp; membangun<br>aplikasi web, <span class=\"accent\">dari konsep<br>sampai produksi.</span>",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatika ITATS",
-    "home.hero.lede": "Fresh graduate Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.51) dengan fondasi kuat di full-stack web development memakai Laravel &amp; React mulai dari desain sistem, REST API, hingga antarmuka yang siap dipakai pengguna.",
+    "home.hero.lede": "Fresh graduate S1 Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.51) dengan fokus pada pengembangan web full-stack menggunakan Laravel dan React. Berpengalaman membangun aplikasi berbasis web dari perancangan hingga implementasi melalui proyek skripsi dan proyek mandiri. Terbiasa menggunakan PHP, TypeScript, dan JavaScript, serta mampu beradaptasi dengan bahasa pemrograman lain seperti Python, Java, dan C++. Siap berkontribusi sebagai Software/Web Developer dan terus mengembangkan kemampuan di lingkungan kerja profesional.",
     "home.hero.cta1": "Lihat Proyek",
     "home.hero.cta2": "Hubungi Saya",
 
@@ -131,7 +131,7 @@ const translations = {
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
     "home.hero.h1": "Designing &amp; building<br>web applications, <span class=\"accent\">from concept<br>to production.</span>",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatics Engineering, ITATS",
-    "home.hero.lede": "Fresh graduate in Informatics Engineering from Institut Teknologi Adhi Tama Surabaya (GPA 3.51) with a strong foundation in full-stack web development using Laravel &amp; React from system design and REST APIs through to interfaces people can actually use.",
+    "home.hero.lede": "Fresh graduate with a Bachelor's degree in Informatics Engineering from Institut Teknologi Adhi Tama Surabaya (GPA: 3.51), specializing in full-stack web development with Laravel and React. Experienced in building web applications from design through implementation through academic and independent projects. Proficient in PHP, TypeScript, and JavaScript, with the ability to quickly adapt to other programming languages, including Python, Java, and C++. Seeking opportunities as a Software/Web Developer to contribute technical skills while continuing to grow in a professional environment.",
     "home.hero.cta1": "View Projects",
     "home.hero.cta2": "Contact Me",
 
