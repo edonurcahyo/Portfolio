@@ -45,7 +45,7 @@ const translations = {
     "home.stack.k4": "Tools &amp; Lainnya",
 
     "home.cta.h3": "Lihat proyek yang sudah dibangun",
-    "home.cta.p": "Empat sheet proyek lengkap dengan detail teknis ada di halaman Projects.",
+    "home.cta.p": "Sheet proyek lengkap dengan detail teknis ada di halaman Projects.",
     "home.cta.btn": "Buka Projects",
 
     "tb.name.lbl": "Nama",
@@ -61,8 +61,8 @@ const translations = {
     /* projects page */
     "projects.title": "Projects — Hendrikus Christianto N. Olmedo",
     "projects.eyebrow": "Sheet 02 — Proyek",
-    "projects.h1": "Empat proyek, empat studi kasus.",
-    "projects.p": "Skripsi dan proyek mandiri yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna. Gambar di bawah adalah sketsa skematik pengganti tangkapan layar.",
+    "projects.h1": "Proyek dan studi kasus.",
+    "projects.p": "Skripsi dan proyek mandiri yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna.",
 
     "screenshot.label": "↳ Klik untuk perbesar",
 
@@ -155,7 +155,7 @@ const translations = {
     "home.stack.k4": "Tools &amp; Other",
 
     "home.cta.h3": "See the projects I've built",
-    "home.cta.p": "Four full project sheets with technical detail live on the Projects page.",
+    "home.cta.p": "Full project sheets with technical detail live on the Projects page.",
     "home.cta.btn": "Open Projects",
 
     "tb.name.lbl": "Name",
@@ -170,8 +170,8 @@ const translations = {
 
     "projects.title": "Projects — Hendrikus Christianto N. Olmedo",
     "projects.eyebrow": "Sheet 02 — Projects",
-    "projects.h1": "Four projects, four case studies.",
-    "projects.p": "Thesis and independent projects designed &amp; built solo, from database design to the user interface. The drawings below are schematic sketches standing in for real screenshots.",
+    "projects.h1": "Projects and case studies.",
+    "projects.p": "Thesis and independent projects designed &amp; built solo, from database design to the user interface.",
 
     "screenshot.label": "↳ Click to enlarge",
 
