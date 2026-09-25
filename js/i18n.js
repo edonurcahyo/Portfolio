@@ -3,14 +3,13 @@
    Keys are grouped by page. Elements are matched via
    data-i18n="key" (textContent), data-i18n-html="key"
    (innerHTML, for text that contains markup like <br>/<span>),
-   or data-i18n-placeholder="key" (input/textarea placeholder).
-   Technical "blueprint" labels (FIG., SCALE, PROJECT NO.,
-   MODEL: PROTOTYPE) are kept in English in both languages on
-   purpose — they read as drafting-sheet convention, not prose.
+   data-i18n-placeholder="key" (input/textarea placeholder),
+   atau data-i18n-href="key" (atribut href).
    ========================================================= */
 const translations = {
   id: {
     /* nav */
+    "preloader.status": "Menyiapkan portofolio",
     "nav.home": "Beranda",
     "nav.projects": "Proyek",
     "nav.contact": "Kontak",
@@ -19,11 +18,16 @@ const translations = {
     /* home */
     "home.title": "Hendrikus Christianto N. Olmedo — Software / Web Developer",
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
-    "home.hero.h1": "Merancang &amp; membangun<br>aplikasi web, <span class=\"accent\">dari konsep<br>sampai produksi.</span>",
+    "home.hero.h1": "Hendrikus Christianto<br>N. Olmedo",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatika ITATS",
-    "home.hero.lede": "Fresh graduate S1 Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.51) dengan fokus pada pengembangan web full-stack menggunakan Laravel dan React. Berpengalaman membangun aplikasi berbasis web dari perancangan hingga implementasi melalui proyek skripsi dan proyek mandiri. Terbiasa menggunakan PHP, TypeScript, dan JavaScript, serta mampu beradaptasi dengan bahasa pemrograman lain seperti Python, Java, dan C++. Siap berkontribusi sebagai Software/Web Developer dan terus mengembangkan kemampuan di lingkungan kerja profesional.",
+    "home.hero.lede": "Fresh graduate S1 Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.51) dengan fokus pada pengembangan web full-stack menggunakan Laravel dan React. Berpengalaman membangun aplikasi berbasis web dari perancangan hingga implementasi melalui proyek skripsi dan proyek mandiri.",
     "home.hero.cta1": "Lihat Proyek",
     "home.hero.cta2": "Hubungi Saya",
+    "home.hero.cv": "Download CV",
+    "home.hero.cv.href": "assets/Hendrikus_WebDeveloper_CV-ID.pdf",
+    "home.hero.scroll": "Scroll Down",
+    "home.hero.side1": "SHEET 01 — HOME · REV. 2026",
+    "home.hero.side2": "SCROLL TO PROJECTS ↓",
 
     "home.spec1.tag": "◇ PENDIDIKAN",
     "home.spec1.sub": "S1 Teknik Informatika · 2022–2026 · IPK 3.51/4.00",
@@ -32,10 +36,29 @@ const translations = {
     "home.spec2.sub": "Laravel (backend &amp; REST API) + React/TypeScript (frontend)",
     "home.spec3.tag": "◇ LOKASI",
     "home.spec3.sub": "Terbuka untuk kerja remote maupun on-site",
+    "home.spec.role": "PERAN",
+    "home.spec.focus.val": "Web · Laravel · React",
+    "home.spec.status": "STATUS",
+    "home.spec.status.val": "Terbuka untuk kerja",
 
     "home.about.eyebrow": "Tentang",
     "home.about.h2": "Profil Singkat",
     "home.about.p": "Saya <strong style=\"color:#e8a53d;\">Hendrikus</strong>, <strong style=\"color:#e8a53d;\">fresh graduate S1 Teknik Informatika ITATS</strong> yang memiliki ketertarikan pada pengembangan aplikasi web dan software development. Saya terbiasa membangun aplikasi dari tahap <strong style=\"color:#59d6e0;\">analisis kebutuhan, perancangan, prototyping, implementasi, hingga pengujian</strong>. Melalui skripsi dan proyek mandiri, saya memiliki pengalaman mengembangkan aplikasi web <strong style=\"color:#59d6e0;\">full-stack</strong> menggunakan <strong style=\"color:#59d6e0;\">Laravel</strong> dan <strong style=\"color:#59d6e0;\">React</strong>, serta bekerja dengan <strong style=\"color:#59d6e0;\">PHP</strong>, <strong style=\"color:#59d6e0;\">JavaScript</strong>, dan <strong style=\"color:#59d6e0;\">TypeScript</strong>. Saya juga memiliki pengalaman menggunakan <strong style=\"color:#59d6e0;\">MySQL</strong> serta memahami dasar perancangan database dan pengujian aplikasi. Saat ini saya terbuka untuk kesempatan sebagai <strong style=\"color:#e8a53d;\">Software Developer, Web Developer, atau Full-Stack Developer</strong> dan terus mengembangkan kemampuan untuk memberikan kontribusi dalam tim.",
+    "home.about.p1.tag": "◇ PENDIDIKAN",
+    "home.about.p1.li1": "S1 Teknik Informatika, Institut Teknologi Adhi Tama Surabaya (2022–2026)",
+    "home.about.p1.li2": "IPK 3.51 / 4.00 — Cum Laude",
+
+    "home.about.p2.tag": "◇ FOKUS",
+    "home.about.p2.li1": "Full-Stack Web Development",
+    "home.about.p2.li2": "Laravel (backend & REST API)",
+    "home.about.p2.li3": "React + TypeScript (frontend)",
+
+    "home.about.p3.tag": "◇ TOOLS & LAINNYA",
+
+    "home.about.stats.ipk.tag": "◇ IPK",
+    "home.about.stats.ipk.sub": "Cum Laude",
+    "home.about.stats.grad.tag": "◇ LULUS",
+    "home.about.stats.grad.sub": "S1 Teknik Informatika",
 
     "home.stack.eyebrow": "Spesifikasi Teknis",
     "home.stack.h2": "Tech Stack",
@@ -122,6 +145,7 @@ const translations = {
   },
 
   en: {
+    "preloader.status": "Preparing portfolio",
     "nav.home": "Home",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
@@ -129,11 +153,16 @@ const translations = {
 
     "home.title": "Hendrikus C. N. Olmedo — Software / Web Developer",
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
-    "home.hero.h1": "Designing &amp; building<br>web applications, <span class=\"accent\">from concept<br>to production.</span>",
+    "home.hero.h1": "Hendrikus Christianto<br>N. Olmedo",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatics Engineering, ITATS",
-    "home.hero.lede": "Fresh graduate with a Bachelor's degree in Informatics Engineering from Institut Teknologi Adhi Tama Surabaya (GPA: 3.51), specializing in full-stack web development with Laravel and React. Experienced in building web applications from design through implementation through academic and independent projects. Proficient in PHP, TypeScript, and JavaScript, with the ability to quickly adapt to other programming languages, including Python, Java, and C++. Seeking opportunities as a Software/Web Developer to contribute technical skills while continuing to grow in a professional environment.",
+    "home.hero.lede": "Fresh graduate with a Bachelor's degree in Informatics Engineering from Institut Teknologi Adhi Tama Surabaya (GPA: 3.51), specializing in full-stack web development with Laravel and React. Experienced in building web applications from design through implementation through academic and independent projects.",
     "home.hero.cta1": "View Projects",
     "home.hero.cta2": "Contact Me",
+    "home.hero.cv": "Download CV",
+    "home.hero.cv.href": "assets/Hendrikus_WebDeveloper_CV-EN.pdf",
+    "home.hero.scroll": "Scroll Down",
+    "home.hero.side1": "SHEET 01 — HOME · REV. 2026",
+    "home.hero.side2": "SCROLL TO PROJECTS ↓",
 
     "home.spec1.tag": "◇ EDUCATION",
     "home.spec1.sub": "B.Sc. Informatics Engineering · 2022–2026 · GPA 3.51/4.00",
@@ -142,10 +171,29 @@ const translations = {
     "home.spec2.sub": "Laravel (backend &amp; REST API) + React/TypeScript (frontend)",
     "home.spec3.tag": "◇ LOCATION",
     "home.spec3.sub": "Open to remote or on-site opportunities",
+    "home.spec.role": "ROLE",
+    "home.spec.focus.val": "Web · Laravel · React",
+    "home.spec.status": "STATUS",
+    "home.spec.status.val": "Open for work",
 
     "home.about.eyebrow": "About",
     "home.about.h2": "Short Profile",
     "home.about.p": "I'm <strong style=\"color:#e8a53d;\">Hendrikus</strong>, a <strong style=\"color:#e8a53d;\">fresh graduate with a Bachelor's degree in Informatics from ITATS</strong>, with a strong interest in web development and software engineering. I'm experienced in building applications through the stages of <strong style=\"color:#59d6e0;\">requirements analysis, design, prototyping, implementation, and testing</strong>. Through my thesis and personal projects, I have developed <strong style=\"color:#59d6e0;\">full-stack</strong> web applications using <strong style=\"color:#59d6e0;\">Laravel</strong> and <strong style=\"color:#59d6e0;\">React</strong>, with experience in <strong style=\"color:#59d6e0;\">PHP</strong>, <strong style=\"color:#59d6e0;\">JavaScript</strong>, and <strong style=\"color:#59d6e0;\">TypeScript</strong>. I also have experience working with <strong style=\"color:#59d6e0;\">MySQL</strong> and a solid understanding of database design and application testing. I'm currently open to opportunities as a <strong style=\"color:#e8a53d;\">Software Developer, Web Developer, or Full-Stack Developer</strong>, where I can continue growing my skills and contribute effectively to a team.",
+    "home.about.p1.tag": "◇ EDUCATION",
+    "home.about.p1.li1": "B.Sc. Informatics Engineering, Institut Teknologi Adhi Tama Surabaya (2022–2026)",
+    "home.about.p1.li2": "GPA 3.51 / 4.00 — Cum Laude",
+
+    "home.about.p2.tag": "◇ FOCUS",
+    "home.about.p2.li1": "Full-Stack Web Development",
+    "home.about.p2.li2": "Laravel (backend & REST API)",
+    "home.about.p2.li3": "React + TypeScript (frontend)",
+
+    "home.about.p3.tag": "◇ TOOLS & OTHERS",
+
+    "home.about.stats.ipk.tag": "◇ GPA",
+    "home.about.stats.ipk.sub": "Cum Laude",
+    "home.about.stats.grad.tag": "◇ GRADUATED",
+    "home.about.stats.grad.sub": "B.Sc. Informatics Engineering",
 
     "home.stack.eyebrow": "Technical Specification",
     "home.stack.h2": "Tech Stack",
@@ -252,6 +300,11 @@ function applyTranslations(lang) {
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     const key = el.getAttribute("data-i18n-placeholder");
     if (dict[key] !== undefined) el.setAttribute("placeholder", dict[key]);
+  });
+
+  document.querySelectorAll("[data-i18n-href]").forEach(el => {
+    const key = el.getAttribute("data-i18n-href");
+    if (dict[key] !== undefined) el.setAttribute("href", dict[key]);
   });
 
   if (dict["__title__"]) document.title = dict["__title__"];
