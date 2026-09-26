@@ -20,7 +20,7 @@ const translations = {
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
     "home.hero.h1": "Hendrikus Christianto<br>N. Olmedo",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatika ITATS",
-    "home.hero.lede": "Fresh graduate S1 Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.51) dengan fokus pada pengembangan web full-stack menggunakan Laravel dan React. Berpengalaman membangun aplikasi berbasis web dari perancangan hingga implementasi melalui proyek skripsi dan proyek mandiri.",
+    "home.hero.lede": "Fresh graduate S1 Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.51) dengan fokus pada pengembangan web full-stack menggunakan Laravel dan React.",
     "home.hero.cta1": "Lihat Proyek",
     "home.hero.cta2": "Hubungi Saya",
     "home.hero.cv": "Download CV",
@@ -85,7 +85,7 @@ const translations = {
     "projects.title": "Projects — Hendrikus Christianto N. Olmedo",
     "projects.eyebrow": "Sheet 02 — Proyek",
     "projects.h1": "Proyek dan studi kasus.",
-    "projects.p": "Skripsi dan proyek mandiri yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna.",
+    "projects.p": "Proyek yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna.",
 
     "screenshot.label": "↳ Klik untuk perbesar",
 
@@ -155,7 +155,7 @@ const translations = {
     "home.eyebrow": "Software / Web Developer — Surabaya, ID",
     "home.hero.h1": "Hendrikus Christianto<br>N. Olmedo",
     "home.hero.role": "Hendrikus Christianto N. Olmedo — Fresh Graduate, Informatics Engineering, ITATS",
-    "home.hero.lede": "Fresh graduate with a Bachelor's degree in Informatics Engineering from Institut Teknologi Adhi Tama Surabaya (GPA: 3.51), specializing in full-stack web development with Laravel and React. Experienced in building web applications from design through implementation through academic and independent projects.",
+    "home.hero.lede": "Fresh graduate with a Bachelor's degree in Informatics Engineering from Institut Teknologi Adhi Tama Surabaya (GPA: 3.51), specializing in full-stack web development with Laravel and React.",
     "home.hero.cta1": "View Projects",
     "home.hero.cta2": "Contact Me",
     "home.hero.cv": "Download CV",
@@ -219,7 +219,7 @@ const translations = {
     "projects.title": "Projects — Hendrikus Christianto N. Olmedo",
     "projects.eyebrow": "Sheet 02 — Projects",
     "projects.h1": "Projects and case studies.",
-    "projects.p": "Thesis and independent projects designed &amp; built solo, from database design to the user interface.",
+    "projects.p": "Projects designed &amp; built solo, from database design to the user interface.",
 
     "screenshot.label": "↳ Click to enlarge",
 

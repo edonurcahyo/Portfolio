@@ -1,4 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect x="5" y="5" width="90" height="90" rx="6" fill="#0a1826" stroke="#59d6e0" stroke-width="3"/>
-  <text x="50" y="68" font-family="'Space Grotesk', 'Arial Narrow', sans-serif" font-size="48" font-weight="700" fill="#59d6e0" text-anchor="middle">HO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Hendrikus">
+  <!-- Background: navy gelap (bukan hitam, biar nyambung dengan tema) -->
+  <rect width="100" height="100" fill="#0a1826"/>
+
+  <!-- Huruf H tebal dengan potongan diagonal -->
+  <g fill="#59d6e0">
+    <!-- Batang kiri tegak -->
+    <rect x="18" y="18" width="14" height="64"/>
+
+    <!-- Batang kanan tegak -->
+    <rect x="68" y="18" width="14" height="64"/>
+
+    <!-- Crossbar tengah -->
+    <rect x="32" y="45" width="36" height="10"/>
+
+    <!-- Potongan diagonal batang kanan (bawah) — bikin unik seperti "R" -->
+    <path d="M68 68 L82 68 L82 82 L68 82 Z" />
+    <path d="M68 68 L82 82 L68 82 Z" fill="#0a1826" />
+  </g>
 </svg>
