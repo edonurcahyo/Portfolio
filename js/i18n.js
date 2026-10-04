@@ -128,6 +128,10 @@ const translations = {
     "contact.h1": "Mari terhubung.",
     "contact.p": "Terbuka untuk peluang Software/Web Developer remote maupun on-site. Silakan hubungi lewat form, email, atau GitHub.",
 
+    "contact.card.cta": "Hubungi →",
+    "contact.form.eyebrow": "KIRIM PESAN",
+    "contact.form.h2": "Punya proyek atau peluang kerja?",
+
     "contact.lbl.email": "Email",
     "contact.lbl.phone": "Telepon",
     "contact.lbl.github": "GitHub",
@@ -260,6 +264,10 @@ const translations = {
     "contact.eyebrow": "Sheet 03 — Contact",
     "contact.h1": "Let's connect.",
     "contact.p": "Open to Software/Web Developer opportunities remote or on-site. Reach out via the form, email, or GitHub.",
+
+    "contact.card.cta": "Reach out →",
+    "contact.form.eyebrow": "SEND MESSAGE",
+    "contact.form.h2": "Have a project or job opportunity?",
 
     "contact.lbl.email": "Email",
     "contact.lbl.phone": "Phone",
