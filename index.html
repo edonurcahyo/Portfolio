@@ -1,320 +1,401 @@
-<!-- trigger github pages -->
 <!doctype html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n-title="home.title">Hendrikus Christianto N. Olmedo — Software / Web Developer</title>
-<meta name="description" content="Portofolio Hendrikus Christianto N. Olmedo, fresh graduate Informatika ITATS yang berfokus pada pengembangan web full-stack dengan Laravel &amp; React.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0e17">
+  <title data-i18n-title="home.title">Hendrikus Christianto N. Olmedo — Software / Web Developer</title>
+  <meta name="description"
+    content="Portofolio Hendrikus Christianto N. Olmedo, fresh graduate Teknik Informatika ITATS (IPK 3.51) berfokus pada pengembangan web full-stack dengan Laravel, React, TypeScript, dan MySQL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Yellowtail&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
+
 <body>
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Lewati ke konten</a>
 
-<!-- ============================ PRELOADER ============================ -->
-<div class="preloader" id="preloader">
-  <span class="preloader-dot"></span>
-  <span class="preloader-word">Hendrikus</span>
-  <span class="preloader-status">
-    <span data-i18n="preloader.status">Menyiapkan portofolio</span>
-    <span class="track"><span></span></span>
-  </span>
-</div>
-
-<div class="reg-mark tl"></div>
-<div class="reg-mark tr"></div>
-<div class="reg-mark bl"></div>
-<div class="reg-mark br"></div>
-
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="/" class="brand">
-      <!-- <span class="brand-mark">HO</span> -->
-      <span class="brand-name"><b>Hendrikus</b></span>
-    </a>
-    <div class="topbar-right">
-      <div class="lang-toggle" role="group" aria-label="Ganti bahasa / Switch language">
-        <span class="lang-opt" data-lang="id">ID</span><span class="lang-opt" data-lang="en">EN</span>
-      </div>
-      <button class="nav-toggle" aria-label="Buka menu"><span></span></button>
-    </div>
-    <nav class="navsheets">
-      <a href="/" class="is-active"><span class="sheetno">01</span><span data-i18n="nav.home">Home</span></a>
-      <a href="/projects"><span class="sheetno">02</span><span data-i18n="nav.projects">Projects</span></a>
-      <a href="/contact"><span class="sheetno">03</span><span data-i18n="nav.contact">Contact</span></a>
-    </nav>
-  </div>
-</header>
-
-<main class="sheet">
-
-  <div class="hero-pin">
-  <section class="hero-full">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="hero-bg-parallax">
-        <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <circle class="draw-dim" cx="300" cy="300" r="270" fill="none" stroke-width="1"/>
-          <circle class="draw-line" cx="300" cy="300" r="210" fill="none" stroke-width="1.1"/>
-          <circle class="draw-line delay1" cx="300" cy="300" r="140" fill="none" stroke-width="1.1"/>
-          <circle class="draw-dim" cx="300" cy="300" r="70" fill="none" stroke-width="1"/>
-          <circle class="draw-line delay2" cx="300" cy="300" r="4" />
-          <line class="draw-dim" x1="300" y1="10" x2="300" y2="590" stroke-width="1"/>
-          <line class="draw-dim" x1="10" y1="300" x2="590" y2="300" stroke-width="1"/>
-          <g class="draw-line delay2">
-            <line x1="300" y1="30" x2="300" y2="52" stroke-width="1.4"/>
-            <line x1="300" y1="548" x2="300" y2="570" stroke-width="1.4"/>
-            <line x1="30" y1="300" x2="52" y2="300" stroke-width="1.4"/>
-            <line x1="548" y1="300" x2="570" y2="300" stroke-width="1.4"/>
-            <line x1="490.8" y1="109.2" x2="475" y2="125" stroke-width="1.4"/>
-            <line x1="109.2" y1="490.8" x2="125" y2="475" stroke-width="1.4"/>
-            <line x1="109.2" y1="109.2" x2="125" y2="125" stroke-width="1.4"/>
-            <line x1="490.8" y1="490.8" x2="475" y2="475" stroke-width="1.4"/>
-          </g>
-          <g class="draw-dim">
-            <path d="M40 90 V40 H90" fill="none" stroke-width="1"/>
-            <path d="M560 90 V40 H510" fill="none" stroke-width="1"/>
-            <path d="M40 510 V560 H90" fill="none" stroke-width="1"/>
-            <path d="M560 510 V560 H510" fill="none" stroke-width="1"/>
-          </g>
-        </svg>
-      </div>
-    </div>
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <span class="hero-side left" data-i18n="home.hero.side1">SHEET 01 — HOME · REV. 2026</span>
-    <span class="hero-side right" data-i18n="home.hero.side2">SCROLL TO PROJECTS ↓</span>
-
-    <div class="hero-full-inner reveal">
-      <span class="eyebrow" data-i18n="home.eyebrow">Software / Web Developer — Surabaya, ID</span>
-      <h1 class="hero-name" data-i18n-html="home.hero.h1">Hendrikus Christianto<br>N. Olmedo</h1>
-      <p class="hero-full-lede" data-i18n-html="home.hero.lede">
-        Fresh graduate Teknik Informatika dari Institut Teknologi Adhi Tama Surabaya (IPK 3.51)
-        dengan fondasi kuat di full-stack web development memakai Laravel &amp; React mulai dari
-        desain sistem, REST API, hingga antarmuka yang siap dipakai pengguna.
-      </p>
-      <div class="hero-full-actions">
-        <a href="assets/Hendrikus_WebDeveloper_CV-ID.pdf" data-i18n-href="home.hero.cv.href" class="btn primary" download>
-          <span data-i18n="home.hero.cv">Download CV</span> <span class="arrow">↓</span>
-        </a>
-        <a href="/projects" class="btn">
-          <span data-i18n="home.hero.cta1">Lihat Proyek</span> <span class="arrow">→</span>
-        </a>
-      </div>
-      <div class="scroll-indicator">
-        <span class="mouse"></span>
-        <span class="scroll-label" data-i18n="home.hero.scroll">Scroll Down</span>
-      </div>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="tag" data-i18n="home.spec.role">PERAN</span>
-        <span class="val" data-i18n="home.spec2.val">Full-Stack Web Dev</span>
-      </div>
-      <div class="stat">
-        <span class="tag" data-i18n="home.spec2.tag">◇ FOKUS</span>
-        <span class="val" data-i18n="home.spec.focus.val">Web · Laravel · React</span>
-      </div>
-      <div class="stat">
-        <span class="tag" data-i18n="home.spec.status">STATUS</span>
-        <span class="val" data-i18n="home.spec.status.val">Terbuka untuk kerja</span>
-      </div>
-      <div class="stat">
-        <span class="tag" data-i18n="home.spec3.tag">◇ LOKASI</span>
-        <span class="val">Surabaya, ID</span>
-      </div>
-    </div>
-  </section>
+  <!-- ============================ PRELOADER ============================ -->
+  <div class="preloader" id="preloader">
+    <span class="preloader-dot"></span>
+    <span class="preloader-word">Hendrikus</span>
+    <span class="preloader-status">
+      <span data-i18n="preloader.status">Menyiapkan portofolio</span>
+      <span class="track"><span></span></span>
+    </span>
   </div>
 
-  <section class="section about reveal">
-    <div class="about-grid">
-      <div class="about-aside">
-        <div class="about-photo">
-          <img src="assets/profile.jpg" alt="Hendrikus Christianto N. Olmedo" width="320" height="400" loading="lazy">
-          <span class="frame-label">FIG. 02 — OPERATOR</span>
-          <span class="frame-label br">SCALE 1:1</span>
-        </div>
-        <div class="about-stats">
-          <div class="stat">
-            <span class="tag" data-i18n="home.about.stats.ipk.tag">◇ IPK</span>
-            <span class="val">3.51 / 4.00</span>
-            <span class="sub" data-i18n="home.about.stats.ipk.sub">Cum Laude</span>
-          </div>
-          <div class="stat">
-            <span class="tag" data-i18n="home.about.stats.grad.tag">◇ LULUS</span>
-            <span class="val">2026</span>
-            <span class="sub" data-i18n="home.about.stats.grad.sub">S1 Teknik Informatika</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-body">
-        <span class="eyebrow" data-i18n="home.about.eyebrow">Tentang</span>
-        <h2 data-i18n="home.about.h2">Profil Singkat</h2>
-        <p class="lede" data-i18n-html="home.about.p">
-          Saya <strong class="hl-amber">Hendrikus</strong>,
-          <strong class="hl-amber">fresh graduate S1 Teknik Informatika ITATS</strong>
-          yang memiliki ketertarikan pada pengembangan aplikasi web dan software development.
-        </p>
-        <div class="about-points">
-          <div class="about-point">
-            <span class="tag" data-i18n="home.about.p1.tag">◇ PENDIDIKAN</span>
-            <ul>
-              <li data-i18n="home.about.p1.li1">S1 Teknik Informatika, Institut Teknologi Adhi Tama Surabaya (2022–2026)</li>
-              <li data-i18n="home.about.p1.li2">IPK 3.51 / 4.00 — Cum Laude</li>
-            </ul>
-          </div>
-          <div class="about-point">
-            <span class="tag" data-i18n="home.about.p2.tag">◇ FOKUS</span>
-            <ul>
-              <li data-i18n="home.about.p2.li1">Full-Stack Web Development</li>
-              <li data-i18n="home.about.p2.li2">Laravel (backend &amp; REST API)</li>
-              <li data-i18n="home.about.p2.li3">React + TypeScript (frontend)</li>
-            </ul>
-          </div>
-          <div class="about-point">
-            <span class="tag" data-i18n="home.about.p3.tag">◇ TOOLS &amp; LAINNYA</span>
-            <ul>
-              <li>PHP · JavaScript · TypeScript · MySQL</li>
-              <li>Git &amp; GitHub · REST API</li>
-              <li>Prototype Method (SDLC)</li>
-            </ul>
-          </div>
+  <!-- ============================ TOP NAVIGATION ============================ -->
+  <header class="topbar topbar-home" id="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand" aria-label="Hendrikus Olmedo — Beranda">
+        <span class="brand-name"><b>Hendrikus</b></span>
+      </a>
+      <nav class="navsheets" id="primary-navigation" aria-label="Navigasi utama">
+        <a href="/" class="is-active" aria-current="page"><span data-i18n="nav.home">Beranda</span></a>
+        <a href="/projects"><span data-i18n="nav.projects">Proyek</span></a>
+        <a href="/certificates"><span data-i18n="nav.certificates">Sertifikat</span></a>
+        <a href="/contact"><span data-i18n="nav.contact">Kontak</span></a>
+      </nav>
+      <div class="topbar-right">
+        <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener noreferrer" class="nav-icon-link"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.4a2.8 2.8 0 0 0-.8-2.2c2.7-.3 5.5-1.3 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.4 0C6.9 3.7 5.8 4 5.8 4a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 10.4c0 4.6 2.8 5.7 5.5 6a2.8 2.8 0 0 0-.8 2.2V22" />
+          </svg>
+        </a>
+        <a href="assets/Hendrikus_WebDeveloper_CV-ID.pdf" data-i18n-href="home.hero.cv.href" class="nav-cv-btn nav-cta"
+          download>
+          <span data-i18n="home.hero.cv">CV</span><span aria-hidden="true">↓</span>
+        </a>
+        <div class="lang-toggle" role="group" aria-label="Ganti bahasa / Switch language" data-i18n-aria="nav.aria">
+          <button type="button" class="lang-opt" data-lang="id" aria-pressed="true">ID</button>
+          <button type="button" class="lang-opt" data-lang="en" aria-pressed="false">EN</button>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="section reveal">
-    <div class="tech-stack">
-      <div class="tech-stack-head">
-        <span class="eyebrow" data-i18n="home.stack.eyebrow">Spesifikasi Teknis</span>
-        <h2 data-i18n="home.stack.h2">Tech Stack</h2>
-      </div>
-      <div class="marquee" aria-label="Tech stack">
-        <div class="marquee-track">
-          <div class="marquee-group">
-            <div class="marquee-item"><img src="assets/icons/laravel.svg" alt="Laravel" loading="lazy"><span>Laravel</span></div>
-            <div class="marquee-item"><img src="assets/icons/react.svg" alt="React" loading="lazy"><span>React</span></div>
-            <div class="marquee-item"><img src="assets/icons/php.svg" alt="PHP" loading="lazy"><span>PHP</span></div>
-            <div class="marquee-item"><img src="assets/icons/typescript.svg" alt="TypeScript" loading="lazy"><span>TypeScript</span></div>
-            <div class="marquee-item"><img src="assets/icons/javascript.svg" alt="JavaScript" loading="lazy"><span>JavaScript</span></div>
-            <div class="marquee-item"><img src="assets/icons/mysql.svg" alt="MySQL" loading="lazy"><span>MySQL</span></div>
-            <div class="marquee-item"><img src="assets/icons/tailwind.svg" alt="Tailwind" loading="lazy"><span>Tailwind</span></div>
-            <div class="marquee-item"><img src="assets/icons/git.svg" alt="Git" loading="lazy"><span>Git</span></div>
-            <div class="marquee-item"><img src="assets/icons/github.svg" alt="GitHub" loading="lazy"><span>GitHub</span></div>
-            <div class="marquee-item"><img src="assets/icons/python.svg" alt="Python" loading="lazy"><span>Python</span></div>
-            <div class="marquee-item"><img src="assets/icons/java.svg" alt="Java" loading="lazy"><span>Java</span></div>
-            <div class="marquee-item"><img src="assets/icons/cpp.svg" alt="C++" loading="lazy"><span>C++</span></div>
+  <!-- ============================ MAIN CONTENT ============================ -->
+  <main class="sheet" id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="home-hero" aria-labelledby="home-hero-title">
+      <div class="hero-bg-parallax" aria-hidden="true"></div>
+      <span class="hero-side-label hero-side-label-left" data-i18n="home.hero.side1" aria-hidden="true">PORTFOLIO — 2026</span>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-label" data-i18n="home.hero.label">FULL-STACK DEVELOPER · SURABAYA, INDONESIA</p>
+          <h1 class="hero-name" id="home-hero-title">
+            <span class="hero-word">Hendrikus</span>
+            <span class="hero-word">Christianto</span>
+            <span class="hero-word">N.</span>
+            <span class="hero-word">Olmedo</span>
+          </h1>
+          <p class="hero-desc" data-i18n="home.hero.tagline">
+            I build thoughtful digital products, from useful interfaces to dependable full-stack systems.
+          </p>
+          <div class="hero-actions">
+            <a href="/projects" class="btn hero-btn">
+              <span data-i18n="home.hero.selected">VIEW SELECTED WORK</span><span aria-hidden="true">↗</span>
+            </a>
+            <a href="assets/Hendrikus_WebDeveloper_CV-ID.pdf" data-i18n-href="home.hero.cv.href" class="btn secondary hero-btn" download>
+              <span data-i18n="home.hero.cv">Download CV</span><span aria-hidden="true">↓</span>
+            </a>
           </div>
-          <div class="marquee-group" aria-hidden="true">
-            <div class="marquee-item"><img src="assets/icons/laravel.svg" alt="" loading="lazy"><span>Laravel</span></div>
-            <div class="marquee-item"><img src="assets/icons/react.svg" alt="" loading="lazy"><span>React</span></div>
-            <div class="marquee-item"><img src="assets/icons/php.svg" alt="" loading="lazy"><span>PHP</span></div>
-            <div class="marquee-item"><img src="assets/icons/typescript.svg" alt="" loading="lazy"><span>TypeScript</span></div>
-            <div class="marquee-item"><img src="assets/icons/javascript.svg" alt="" loading="lazy"><span>JavaScript</span></div>
-            <div class="marquee-item"><img src="assets/icons/mysql.svg" alt="" loading="lazy"><span>MySQL</span></div>
-            <div class="marquee-item"><img src="assets/icons/tailwind.svg" alt="" loading="lazy"><span>Tailwind</span></div>
-            <div class="marquee-item"><img src="assets/icons/git.svg" alt="" loading="lazy"><span>Git</span></div>
-            <div class="marquee-item"><img src="assets/icons/github.svg" alt="" loading="lazy"><span>GitHub</span></div>
-            <div class="marquee-item"><img src="assets/icons/python.svg" alt="" loading="lazy"><span>Python</span></div>
-            <div class="marquee-item"><img src="assets/icons/java.svg" alt="" loading="lazy"><span>Java</span></div>
-            <div class="marquee-item"><img src="assets/icons/cpp.svg" alt="" loading="lazy"><span>C++</span></div>
+          <span class="hero-divider" aria-hidden="true"></span>
+          <a class="hero-scroll" href="#about-section">
+            <svg viewBox="0 0 24 32" fill="none" aria-hidden="true">
+              <rect x="5" y="2" width="14" height="24" rx="7"></rect>
+              <path d="M12 7v5"></path>
+            </svg>
+            <span data-i18n="home.hero.scroll">SCROLL DOWN</span>
+          </a>
+        </div>
+
+        <div class="hero-stats" role="group" aria-label="Professional profile" data-i18n-aria="home.hero.profile">
+          <div class="hero-stat">
+            <span class="label" data-i18n="home.hero.stat.role">ROLE</span>
+            <span class="value" data-i18n="home.hero.stat.role.value">Full-stack Developer</span>
+          </div>
+          <div class="hero-stat">
+            <span class="label" data-i18n="home.hero.stat.focus">FOCUS</span>
+            <span class="value" data-i18n="home.hero.stat.focus.value">Web · Apps · Laravel</span>
+          </div>
+          <div class="hero-stat">
+            <span class="label" data-i18n="home.hero.stat.status">STATUS</span>
+            <span class="value" data-i18n="home.hero.stat.status.value">Available for work</span>
+          </div>
+          <div class="hero-stat">
+            <span class="label" data-i18n="home.hero.stat.location">BASED IN</span>
+            <span class="value" data-i18n="home.hero.stat.location.value">Surabaya, Indonesia</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="section reveal" style="border-bottom:none;">
-    <div class="cta-strip">
-      <div>
-        <h3 data-i18n="home.cta.h3">Lihat proyek yang sudah dibangun</h3>
-        <p data-i18n="home.cta.p">Sheet proyek lengkap dengan detail teknis ada di halaman Projects.</p>
+      <span class="hero-side-label hero-side-label-right" data-i18n="home.hero.side2" aria-hidden="true">SCROLL TO SELECTED WORK ↓</span>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section reveal" id="about-section">
+      <div class="about-grid">
+        <div class="about-aside">
+          <div class="about-photo-wrap">
+            <img src="assets/profile.jpg" alt="Hendrikus Christianto N. Olmedo" width="340" height="380" loading="lazy">
+            <span class="frame-tag">OPERATOR · S1 ITATS</span>
+          </div>
+          <div class="about-stats-grid">
+            <div class="about-stat-cell">
+              <span class="label" data-i18n="home.about.stats.ipk.tag">◇ IPK</span>
+              <span class="value">3.51</span>
+              <span class="sub" data-i18n="home.about.stats.ipk.sub">Cum Laude</span>
+            </div>
+            <div class="about-stat-cell">
+              <span class="label" data-i18n="home.about.stats.grad.tag">◇ LULUS</span>
+              <span class="value">2026</span>
+              <span class="sub" data-i18n="home.about.stats.grad.sub">S1 Teknik Informatika</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-body">
+          <span class="eyebrow" data-i18n="home.about.eyebrow">Tentang</span>
+          <h2 data-i18n="home.about.h2">Teknologi yang terasa sederhana.</h2>
+          <p class="lede" data-i18n-html="home.about.p">
+            Saya <strong>Hendrikus</strong>, lulusan S1 Teknik Informatika ITATS dengan IPK 3.51 (Cum Laude). Saya terbiasa membangun aplikasi web dari tahap analisis kebutuhan, arsitektur database, pembuatan REST API handal, hingga antarmuka pengguna interaktif yang responsif dan siap pakai.
+          </p>
+          <div class="about-points">
+            <div class="about-point">
+              <span class="point-label" data-i18n="home.about.p1.tag">◇ PENDIDIKAN</span>
+              <ul>
+                <li data-i18n="home.about.p1.li1">S1 Teknik Informatika, Institut Teknologi Adhi Tama Surabaya (2022–2026)</li>
+                <li data-i18n="home.about.p1.li2">IPK 3.51 / 4.00 — Cum Laude</li>
+              </ul>
+            </div>
+            <div class="about-point">
+              <span class="point-label" data-i18n="home.about.p2.tag">◇ SPESIALISASI</span>
+              <ul>
+                <li data-i18n="home.about.p2.li1">Full-Stack Web Development</li>
+                <li data-i18n="home.about.p2.li2">Laravel (Backend &amp; REST API)</li>
+                <li data-i18n="home.about.p2.li3">React + TypeScript (Frontend)</li>
+              </ul>
+            </div>
+            <div class="about-point">
+              <span class="point-label" data-i18n="home.about.p3.tag">◇ TOOLS &amp; STACK</span>
+              <ul>
+                <li>PHP · JavaScript · TypeScript · MySQL</li>
+                <li>Git &amp; GitHub · REST API · Tailwind CSS</li>
+                <li>Metode Prototype (SDLC)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <a href="/projects" class="btn primary">
-        <span data-i18n="home.cta.btn">Buka Projects</span> <span class="arrow">→</span>
+    </section>
+
+    <!-- TECH STACK SECTION -->
+    <section class="section reveal">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow" data-i18n="home.stack.eyebrow">Spesifikasi Teknis</span>
+          <h2 data-i18n="home.stack.h2">Tech Stack &amp; Tools</h2>
+        </div>
+      </div>
+      <div class="tech-stack" style="border-top:none; padding-top:0; margin-top:0;">
+        <span class="chip"><img src="assets/icons/laravel.svg" alt="" loading="lazy"> Laravel</span>
+        <span class="chip"><img src="assets/icons/react.svg" alt="" loading="lazy"> React</span>
+        <span class="chip"><img src="assets/icons/php.svg" alt="" loading="lazy"> PHP</span>
+        <span class="chip"><img src="assets/icons/typescript.svg" alt="" loading="lazy"> TypeScript</span>
+        <span class="chip"><img src="assets/icons/javascript.svg" alt="" loading="lazy"> JavaScript</span>
+        <span class="chip"><img src="assets/icons/mysql.svg" alt="" loading="lazy"> MySQL</span>
+        <span class="chip"><img src="assets/icons/tailwind.svg" alt="" loading="lazy"> Tailwind CSS</span>
+        <span class="chip"><img src="assets/icons/git.svg" alt="" loading="lazy"> Git</span>
+        <span class="chip"><img src="assets/icons/github.svg" alt="" loading="lazy"> GitHub</span>
+        <span class="chip"><img src="assets/icons/python.svg" alt="" loading="lazy"> Python</span>
+        <span class="chip"><img src="assets/icons/java.svg" alt="" loading="lazy"> Java</span>
+        <span class="chip"><img src="assets/icons/cpp.svg" alt="" loading="lazy"> C++</span>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section reveal">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow" data-i18n="projects.eyebrow">Karya Terpilih</span>
+          <h2 data-i18n="home.new.work.heading">Proyek Unggulan</h2>
+        </div>
+        <a href="/projects" class="text-link">
+          <span data-i18n="home.new.work.all">Lihat Semua Proyek</span> <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="home-projects-row">
+        <!-- Project 01 -->
+        <article class="home-project-item">
+          <a href="/projects" class="home-project-img-wrap" aria-label="Lihat proyek reservasi potong rambut">
+            <img src="assets/Preview project/barbershop.png" alt="Sistem Manajemen Reservasi Potong Rambut" loading="lazy" width="600" height="360">
+          </a>
+          <div class="home-project-body">
+            <span class="home-project-num">01 · SKRIPSI</span>
+            <h3 data-i18n="p1.title">Sistem Manajemen Reservasi Potong Rambut</h3>
+            <p data-i18n="p1.feature.desc">Aplikasi reservasi jasa berbasis web dengan arsitektur REST API Laravel dan frontend React terpisah, dirancang mencegah bentrok jadwal dan memudahkan pelanggan.</p>
+            <div class="home-project-tags">
+              <span class="home-project-tag">Laravel</span>
+              <span class="home-project-tag">React</span>
+              <span class="home-project-tag">TypeScript</span>
+              <span class="home-project-tag">MySQL</span>
+              <span class="home-project-tag">REST API</span>
+            </div>
+            <a href="/projects" class="text-link">
+              <span data-i18n="home.new.work.details">Detail Proyek</span> <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="home-project-item">
+          <a href="/projects" class="home-project-img-wrap" aria-label="Lihat proyek sistem manajemen WiFi">
+            <img src="assets/Preview project/wifi.png" alt="Sistem Manajemen WiFi" loading="lazy" width="600" height="360">
+          </a>
+          <div class="home-project-body">
+            <span class="home-project-num">02 · MANDIRI</span>
+            <h3 data-i18n="p4.title">Sistem Manajemen WiFi</h3>
+            <p data-i18n="p4.feature.desc">Sistem manajemen jaringan dan pengguna berbasis role dengan monitoring jaringan real-time dan dashboard analitik interaktif.</p>
+            <div class="home-project-tags">
+              <span class="home-project-tag">Laravel 10</span>
+              <span class="home-project-tag">Tailwind CSS</span>
+              <span class="home-project-tag">MySQL</span>
+              <span class="home-project-tag">Analytics</span>
+            </div>
+            <a href="/projects" class="text-link">
+              <span data-i18n="home.new.work.details">Detail Proyek</span> <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PUBLISH FLOW SPOTLIGHT -->
+    <section class="section reveal publish-feature-section" aria-labelledby="publish-flow-title">
+      <div class="publish-feature-heading">
+        <span class="eyebrow" data-i18n="home.project.publishflow.eyebrow">Proyek lainnya · 03</span>
+        <h2 id="publish-flow-title" data-i18n="home.project.publishflow.title">Publish Flow</h2>
+      </div>
+      <article class="publish-flow-feature">
+        <div class="publish-flow-art">
+          <div class="publish-code-window">
+            <div class="publish-code-toolbar">
+              <span class="publish-code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span data-i18n="home.project.publishflow.code">Contoh · ProfileController.php</span>
+              <span class="publish-code-language">Laravel</span>
+            </div>
+            <pre class="publish-code"><code><span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">01</span><span><span class="publish-code-keyword">public function</span> show()</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">02</span><span>{</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">03</span><span>    <span class="publish-code-keyword">return</span> response()-&gt;json([</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">04</span><span>        <span class="publish-code-string">'name'</span> =&gt; <span class="publish-code-string">'Hendrikus Christianto N. Olmedo'</span>,</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">05</span><span>        <span class="publish-code-string">'role'</span> =&gt; <span class="publish-code-string">'Full-Stack Web Developer'</span>,</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">06</span><span>        <span class="publish-code-string">'location'</span> =&gt; <span class="publish-code-string">'Surabaya, Indonesia'</span>,</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">07</span><span>        <span class="publish-code-string">'stack'</span> =&gt; [<span class="publish-code-string">'Laravel'</span>, <span class="publish-code-string">'React'</span>, <span class="publish-code-string">'TypeScript'</span>],</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">08</span><span>    ]);</span></span>
+<span class="publish-code-line"><span class="publish-code-number" aria-hidden="true">09</span><span>}</span></span></code></pre>
+          </div>
+        </div>
+        <div class="publish-flow-copy">
+          <span class="home-project-num">LARAVEL · PHP</span>
+          <p data-i18n="home.project.publishflow.desc">Aplikasi Laravel yang berfokus pada alur publikasi konten yang lebih terstruktur.</p>
+          <a href="/contact" class="text-link">
+            <span data-i18n="home.project.publishflow.action">Tanya tentang proyek</span> <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="section" style="border-bottom:none;">
+      <div class="cta-block reveal">
+        <div>
+          <span class="eyebrow" data-i18n="contact.eyebrow">Mari Terhubung</span>
+          <h2 data-i18n="certificates.cta.title">Tertarik dengan kualifikasi dan pengalaman saya?</h2>
+          <p data-i18n="projects.cta.p">Saya terbuka untuk peluang posisi Software / Web Developer, remote maupun on-site.</p>
+        </div>
+        <a href="/contact" class="btn">
+          <span data-i18n="certificates.cta.btn">Hubungi Saya</span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ SITE FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cell name">
+        <span class="label" data-i18n="tb.name.lbl">Nama</span>
+        <span class="value">Hendrikus Christianto N. Olmedo</span>
+      </div>
+      <div class="footer-cell">
+        <span class="label" data-i18n="tb.role.lbl">Peran</span>
+        <span class="value" data-i18n="tb.role.val">Software / Web Developer</span>
+      </div>
+      <div class="footer-cell">
+        <span class="label" data-i18n="contact.lbl.location">Lokasi</span>
+        <span class="value" data-i18n="contact.val.location">Surabaya, Indonesia</span>
+      </div>
+      <div class="footer-cell">
+        <span class="label" data-i18n="tb.contact.lbl">Kontak</span>
+        <div class="footer-social value">
+          <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/edo_nurcahyo/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="/contact">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ BOTTOM NAV (Mobile Only) ============================ -->
+  <nav class="bottom-nav" aria-label="Navigasi utama" data-i18n-aria="nav.main">
+    <div class="bottom-nav-inner">
+      <a href="/" class="bn-item is-active" aria-current="page" aria-label="Beranda" data-i18n-aria="nav.home">
+        <span class="bn-pill">
+          <span class="bn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+            </svg>
+          </span>
+          <span class="bn-label" data-i18n="nav.home">Beranda</span>
+        </span>
+      </a>
+      <a href="/projects" class="bn-item" aria-label="Proyek" data-i18n-aria="nav.projects">
+        <span class="bn-pill">
+          <span class="bn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="16" rx="2" />
+              <path d="M3 10h18M9 20V10" />
+            </svg>
+          </span>
+          <span class="bn-label" data-i18n="nav.projects">Proyek</span>
+        </span>
+      </a>
+      <a href="/certificates" class="bn-item" aria-label="Sertifikat" data-i18n-aria="nav.certificates">
+        <span class="bn-pill">
+          <span class="bn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M7 3h10l3 3v15H4V3z" />
+              <path d="M8 11h8M8 15h5M14 3v4h6" />
+            </svg>
+          </span>
+          <span class="bn-label" data-i18n="nav.certificates">Sertifikat</span>
+        </span>
+      </a>
+      <a href="/contact" class="bn-item" aria-label="Kontak" data-i18n-aria="nav.contact">
+        <span class="bn-pill">
+          <span class="bn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m4 7 8 6 8-6" />
+            </svg>
+          </span>
+          <span class="bn-label" data-i18n="nav.contact">Kontak</span>
+        </span>
       </a>
     </div>
-  </section>
+  </nav>
 
-</main>
-
-<footer class="titleblock">
-  <div class="titleblock-inner">
-    <div class="tb-cell name">
-      <span class="lbl" data-i18n="tb.name.lbl">Nama</span>
-      <span class="val">Hendrikus Christianto N. Olmedo</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.sheet.lbl">Sheet</span>
-      <span class="val" data-i18n="tb.sheet.home">01 / 03 — Home</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.role.lbl">Peran</span>
-      <span class="val" data-i18n="tb.role.val">Software / Web Dev</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.rev.lbl">Rev.</span>
-      <span class="val">2026</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.contact.lbl">Kontak</span>
-      <span class="val tb-social">
-        <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-        <a href="https://www.instagram.com/edo_nurcahyo/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-        <a href="/contact" aria-label="Contact">Email</a>
-      </span>
-    </div>
-  </div>
-</footer>
-
-<!-- ============================ BOTTOM NAV (mobile only) ============================ -->
-<nav class="bottom-nav" aria-label="Navigasi utama">
-  <div class="bottom-nav-inner">
-    <a href="/" class="bn-item is-active" data-nav="home">
-      <span class="bn-pill">
-        <span class="bn-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>
-          </svg>
-        </span>
-        <span class="bn-label" data-i18n="nav.home">Beranda</span>
-      </span>
-    </a>
-    <a href="/projects" class="bn-item" data-nav="projects">
-      <span class="bn-pill">
-        <span class="bn-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="7" height="9"/>
-            <rect x="14" y="3" width="7" height="5"/>
-            <rect x="14" y="12" width="7" height="9"/>
-            <rect x="3" y="16" width="7" height="5"/>
-          </svg>
-        </span>
-        <span class="bn-label" data-i18n="nav.projects">Proyek</span>
-      </span>
-    </a>
-    <a href="/contact" class="bn-item" data-nav="contact">
-      <span class="bn-pill">
-        <span class="bn-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16v16H4z"/>
-            <path d="m4 6 8 7 8-7"/>
-          </svg>
-        </span>
-        <span class="bn-label" data-i18n="nav.contact">Kontak</span>
-      </span>
-    </a>
-  </div>
-</nav>
-
-<script src="js/preloader.js"></script>
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hero-animations.js"></script>
 </body>
+
 </html>

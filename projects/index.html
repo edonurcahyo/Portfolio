@@ -1,235 +1,265 @@
 <!doctype html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n-title="projects.title">Projects — Hendrikus C. N. Olmedo</title>
-<meta name="description" content="Detail proyek Hendrikus C. N. Olmedo: aplikasi reservasi barbershop, sistem pencatatan inventaris & keuangan, website resep makanan, dan sistem manajemen WiFi.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
-<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-<link rel="icon" type="image/png" href="../assets/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0e17">
+  <title data-i18n-title="projects.title">Proyek — Hendrikus Olmedo</title>
+  <meta name="description"
+    content="Pilihan proyek web dan aplikasi oleh Hendrikus Christianto N. Olmedo. Laravel, React, TypeScript, MySQL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Yellowtail&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 </head>
+
 <body>
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Lewati ke konten</a>
 
-<div class="reg-mark tl"></div>
-<div class="reg-mark tr"></div>
-<div class="reg-mark bl"></div>
-<div class="reg-mark br"></div>
-
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="/" class="brand">
-      <!-- <span class="brand-mark">H</span> -->
-      <span class="brand-name"><b>Hendrikus</b></span>
-    </a>
-    <div class="topbar-right">
-      <div class="lang-toggle" role="group" aria-label="Ganti bahasa / Switch language">
-        <span class="lang-opt" data-lang="id">ID</span><span class="lang-opt" data-lang="en">EN</span>
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand" aria-label="Hendrikus Olmedo — Beranda">
+        <span class="brand-name"><b>Hendrikus</b></span>
+      </a>
+      <nav class="navsheets" id="primary-navigation" aria-label="Navigasi utama">
+        <a href="/"><span data-i18n="nav.home">Beranda</span></a>
+        <a href="/projects" class="is-active" aria-current="page"><span data-i18n="nav.projects">Proyek</span></a>
+        <a href="/certificates"><span data-i18n="nav.certificates">Sertifikat</span></a>
+        <a href="/contact"><span data-i18n="nav.contact">Kontak</span></a>
+      </nav>
+      <div class="topbar-right">
+        <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener noreferrer" class="nav-icon-link"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.4a2.8 2.8 0 0 0-.8-2.2c2.7-.3 5.5-1.3 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.4 0C6.9 3.7 5.8 4 5.8 4a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 10.4c0 4.6 2.8 5.7 5.5 6a2.8 2.8 0 0 0-.8 2.2V22" />
+          </svg>
+        </a>
+        <a href="../assets/Hendrikus_WebDeveloper_CV-ID.pdf" data-i18n-href="home.hero.cv.href" class="nav-cv-btn"
+          download>
+          <span data-i18n="home.hero.cv">CV</span><span aria-hidden="true">↓</span>
+        </a>
+        <div class="lang-toggle" role="group" aria-label="Ganti bahasa / Switch language" data-i18n-aria="nav.aria">
+          <button type="button" class="lang-opt" data-lang="id" aria-pressed="true">ID</button>
+          <button type="button" class="lang-opt" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
-      <button class="nav-toggle" aria-label="Buka menu"><span></span></button>
     </div>
-    <nav class="navsheets">
-      <a href="/"><span class="sheetno">01</span><span data-i18n="nav.home">Home</span></a>
-      <a href="/projects" class="is-active"><span class="sheetno">02</span><span data-i18n="nav.projects">Projects</span></a>
-      <a href="/contact"><span class="sheetno">03</span><span data-i18n="nav.contact">Contact</span></a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main class="sheet">
-
-  <section class="page-hero-modern reveal">
-    <span class="eyebrow" data-i18n="projects.eyebrow">4 PROYEK TERPUBLIKASI</span>
-    <h1 data-i18n="projects.h1">Projects</h1>
-    <p data-i18n-html="projects.p">Skripsi dan proyek mandiri yang dirancang &amp; dibangun sendiri, dari desain database sampai antarmuka pengguna.</p>
-
-    <div class="filter-tabs" role="tablist" aria-label="Filter proyek">
-      <button class="filter-tab is-active" data-filter="all">
-        <span data-i18n="projects.filter.all">SEMUA</span> · 4
-      </button>
-      <button class="filter-tab" data-filter="webapp">
-        <span data-i18n="projects.filter.webapp">WEB APP</span> · 4
-      </button>
-    </div>
-  </section>
-
-  <section class="section reveal" style="padding-top:0;">
-    <div class="project-grid">
-
-      <!-- PROJECT 1 — BARBERSHOP RESERVATION -->
-      <article class="project-card" data-category="webapp">
-        <a href="../assets/Preview project/barbershop.png" target="_blank" class="screenshot-link card-screenshot-wrap">
-          <span class="card-index">01</span>
-          <span class="card-tag" data-i18n="projects.filter.webapp">WEB APP</span>
-          <img src="../assets/Preview project/barbershop.png" alt="Screenshot aplikasi reservasi barbershop" class="project-screenshot card-screenshot" loading="lazy">
-          <span class="card-zoom-hint" data-i18n="screenshot.label">↳ Klik untuk perbesar</span>
-        </a>
-        <div class="card-body">
-          <span class="card-kicker" data-i18n="p1.category">THESIS PROJECT</span>
-          <h3 data-i18n="p1.title">Web-Based Haircut Service Reservation</h3>
-          <p class="card-desc" data-i18n-html="p1.desc">Aplikasi reservasi jasa potong rambut berbasis web dengan arsitektur terpisah antara backend API dan frontend.</p>
-          <div class="card-chips">
-            <span class="chip">Laravel</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">PHP</span><span class="chip">MySQL</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/edonurcahyo/seniman-api" target="_blank" rel="noopener">↳ Backend API</a>
-            <a href="https://github.com/edonurcahyo/seniman-barbershop" target="_blank" rel="noopener">↳ Frontend App</a>
-          </div>
+  <main class="sheet page-sheet" id="main-content">
+    <header class="page-intro reveal">
+      <span class="section-number">PROYEK</span>
+      <span class="eyebrow" data-i18n="projects.eyebrow">Karya Terpilih</span>
+      <h1 data-i18n="projects.h1">Membangun solusi,<br>satu proyek dalam satu waktu.</h1>
+      <p data-i18n="projects.lede">Eksplorasi proyek akademik dan mandiri yang menggabungkan pengembangan web, API, dan
+        pengalaman pengguna.</p>
+      <div class="project-toolbar">
+        <p class="project-count">
+          <span class="label" data-i18n="projects.count.label">PROYEK</span>
+          <span class="value">04</span>
+        </p>
+        <div class="project-filters" role="group" aria-label="Filter proyek">
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true"
+            data-i18n="projects.filter.all">Semua</button>
+          <button class="filter-chip" type="button" data-filter="academic" aria-pressed="false"
+            data-i18n="projects.filter.academic">Akademik</button>
+          <button class="filter-chip" type="button" data-filter="independent" aria-pressed="false"
+            data-i18n="projects.filter.independent">Mandiri</button>
         </div>
-      </article>
-
-      <!-- PROJECT 2 — INVENTORY & FINANCIAL SYSTEM -->
-      <article class="project-card" data-category="webapp">
-        <a href="../assets/Preview project/inventory.png" target="_blank" class="screenshot-link card-screenshot-wrap">
-          <span class="card-index">02</span>
-          <span class="card-tag" data-i18n="projects.filter.webapp">WEB APP</span>
-          <img src="../assets/Preview project/inventory.png" alt="Screenshot sistem pencatatan inventaris dan keuangan" class="project-screenshot card-screenshot" loading="lazy">
-          <span class="card-zoom-hint" data-i18n="screenshot.label">↳ Klik untuk perbesar</span>
-        </a>
-        <div class="card-body">
-          <span class="card-kicker" data-i18n="p2.category">INDEPENDENT PROJECT</span>
-          <h3 data-i18n-html="p2.title">Inventory &amp; Financial Record-Keeping</h3>
-          <p class="card-desc" data-i18n="p2.desc">Sistem berbasis web untuk mencatat transaksi keuangan harian, bulanan, dan tahunan, dilengkapi rekap laporan otomatis.</p>
-          <div class="card-chips">
-            <span class="chip">Laravel</span><span class="chip">MySQL</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/edonurcahyo/Manajemen-Inventory---Laravel" target="_blank" rel="noopener" data-i18n="projects.link">Repo</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJECT 3 — FOOD RECIPE WEBSITE -->
-      <article class="project-card" data-category="webapp">
-        <a href="../assets/Preview project/foodrecipe.png" target="_blank" class="screenshot-link card-screenshot-wrap">
-          <span class="card-index">03</span>
-          <span class="card-tag" data-i18n="projects.filter.webapp">WEB APP</span>
-          <img src="../assets/Preview project/foodrecipe.png" alt="Screenshot website resep makanan" class="project-screenshot card-screenshot" loading="lazy">
-          <span class="card-zoom-hint" data-i18n="screenshot.label">↳ Klik untuk perbesar</span>
-        </a>
-        <div class="card-body">
-          <span class="card-kicker" data-i18n="p3.category">CLASS ASSIGNMENT</span>
-          <h3 data-i18n="p3.title">Food Recipe Website</h3>
-          <p class="card-desc" data-i18n="p3.desc">Platform berbagi dan eksplorasi resep makanan dengan fitur pencarian, bookmark, dan manajemen resep (CRUD).</p>
-          <div class="card-chips">
-            <span class="chip">PHP Native</span><span class="chip">MySQL</span><span class="chip">JavaScript</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/edonurcahyo/Food-Recipe-Website" target="_blank" rel="noopener" data-i18n="projects.link">Repo</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJECT 4 — WIFI MANAGEMENT SYSTEM -->
-      <article class="project-card" data-category="webapp">
-        <a href="../assets/Preview project/wifi.png" target="_blank" class="screenshot-link card-screenshot-wrap">
-          <span class="card-index">04</span>
-          <span class="card-tag" data-i18n="projects.filter.webapp">WEB APP</span>
-          <img src="../assets/Preview project/wifi.png" alt="Screenshot sistem manajemen WiFi" class="project-screenshot card-screenshot" loading="lazy">
-          <span class="card-zoom-hint" data-i18n="screenshot.label">↳ Klik untuk perbesar</span>
-        </a>
-        <div class="card-body">
-          <span class="card-kicker" data-i18n="p4.category">INDEPENDENT PROJECT</span>
-          <h3 data-i18n="p4.title">WiFi Management System</h3>
-          <p class="card-desc" data-i18n="p4.desc">Sistem manajemen WiFi berbasis web dengan fitur autentikasi, manajemen pengguna berbasis role, dan dashboard analitik.</p>
-          <div class="card-chips">
-            <span class="chip">Laravel 10</span><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">Tailwind</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/edonurcahyo/Wifi-PTI" target="_blank" rel="noopener" data-i18n="projects.link">Repo</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section class="section reveal" style="border-bottom:none; padding-top:0;">
-    <div class="cta-strip">
-      <div>
-        <h3 data-i18n="projects.cta.h3">Tertarik berdiskusi lebih lanjut?</h3>
-        <p data-i18n="projects.cta.p">Saya terbuka untuk peluang Software/Web Developer, remote maupun on-site.</p>
       </div>
-      <a href="/contact" class="btn primary"><span data-i18n="projects.cta.btn">Hubungi Saya</span> <span class="arrow">→</span></a>
-    </div>
-  </section>
+    </header>
 
-</main>
+    <section class="project-grid" aria-label="Daftar proyek">
 
-<footer class="titleblock">
-  <div class="titleblock-inner">
-    <div class="tb-cell name">
-      <span class="lbl" data-i18n="tb.name.lbl">Nama</span>
-      <span class="val">Hendrikus Christianto N. Olmedo</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.sheet.lbl">Sheet</span>
-      <span class="val" data-i18n="tb.sheet.projects">02 / 03 — Projects</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.role.lbl">Peran</span>
-      <span class="val" data-i18n="tb.role.val">Software / Web Dev</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.rev.lbl">Rev.</span>
-      <span class="val">2026</span>
-    </div>
-    <div class="tb-cell">
-      <span class="lbl" data-i18n="tb.contact.lbl">Kontak</span>
-      <span class="val tb-social">
-        <a href="https://github.com/edonurcahyo" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-        <a href="https://www.instagram.com/edo_nurcahyo/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-        <a href="/contact" aria-label="Contact">Email</a>
-      </span>
-    </div>
-  </div>
-</footer>
+      <!-- Project 01 -->
+      <article class="project-card reveal" data-category="academic">
+        <a class="project-image-link" href="../assets/Preview project/barbershop.png"
+          aria-label="Perbesar pratinjau proyek reservasi potong rambut" data-i18n-aria="projects.image.p1">
+          <div class="project-image-wrap">
+            <img src="../assets/Preview project/barbershop.png" alt="Tampilan sistem manajemen reservasi potong rambut"
+              data-i18n-alt="projects.image.alt.p1" width="640" height="400" loading="lazy">
+            <span class="img-badge img-badge-num" aria-hidden="true">01</span>
+            <span class="img-badge img-badge-cat" aria-hidden="true" data-i18n="p1.category">Skripsi</span>
+            <span class="img-expand-hint" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <div class="card-body">
+          <span class="card-kicker" data-i18n="p1.category">Proyek Skripsi</span>
+          <h2 data-i18n="p1.title">Sistem Manajemen Reservasi Potong Rambut</h2>
+          <p class="card-desc" data-i18n="p1.desc">Aplikasi reservasi berbasis web dengan backend API dan frontend
+            terpisah.</p>
+          <div class="card-tags">
+            <span class="card-tag">Laravel</span>
+            <span class="card-tag">React</span>
+            <span class="card-tag">TypeScript</span>
+            <span class="card-tag">MySQL</span>
+          </div>
+          <div class="card-footer">
+            <a class="card-footer-link" href="https://github.com/edonurcahyo/seniman-api" target="_blank"
+              rel="noopener noreferrer"><span data-i18n="projects.repo.backend">Backend API</span> <span
+                aria-hidden="true">↗</span></a>
+            <a class="card-footer-link" href="https://github.com/edonurcahyo/seniman-barbershop" target="_blank"
+              rel="noopener noreferrer"><span data-i18n="projects.repo.frontend">Frontend App</span> <span
+                aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
 
-<!-- ============================ BOTTOM NAV (mobile only) ============================ -->
-<nav class="bottom-nav" aria-label="Navigasi utama">
-  <div class="bottom-nav-inner">
-    <a href="/" class="bn-item" data-nav="home">
-      <span class="bn-pill">
-        <span class="bn-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>
-          </svg>
-        </span>
-        <span class="bn-label" data-i18n="nav.home">Beranda</span>
-      </span>
-    </a>
-    <a href="/projects" class="bn-item is-active" data-nav="projects">
-      <span class="bn-pill">
-        <span class="bn-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="7" height="9"/>
-            <rect x="14" y="3" width="7" height="5"/>
-            <rect x="14" y="12" width="7" height="9"/>
-            <rect x="3" y="16" width="7" height="5"/>
-          </svg>
-        </span>
-        <span class="bn-label" data-i18n="nav.projects">Proyek</span>
-      </span>
-    </a>
-    <a href="/contact" class="bn-item" data-nav="contact">
-      <span class="bn-pill">
-        <span class="bn-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16v16H4z"/>
-            <path d="m4 6 8 7 8-7"/>
-          </svg>
-        </span>
-        <span class="bn-label" data-i18n="nav.contact">Kontak</span>
-      </span>
-    </a>
-  </div>
-</nav>
+      <!-- Project 02 -->
+      <article class="project-card reveal" data-delay="1" data-category="academic">
+        <a class="project-image-link" href="../assets/Preview project/inventory.png"
+          aria-label="Perbesar pratinjau sistem inventaris" data-i18n-aria="projects.image.p2">
+          <div class="project-image-wrap">
+            <img src="../assets/Preview project/inventory.png" alt="Tampilan sistem pencatatan inventaris dan keuangan"
+              data-i18n-alt="projects.image.alt.p2" width="640" height="400" loading="lazy">
+            <span class="img-badge img-badge-num" aria-hidden="true">02</span>
+            <span class="img-badge img-badge-cat" aria-hidden="true" data-i18n="p2.category">Akademik</span>
+            <span class="img-expand-hint" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <div class="card-body">
+          <span class="card-kicker" data-i18n="p2.category">Proyek Akademik</span>
+          <h2 data-i18n="p2.title">Aplikasi Manajemen Inventaris</h2>
+          <p class="card-desc" data-i18n="p2.desc">Eksplorasi resep makanan dan pengelolaan koleksi resep.</p>
+          <div class="card-tags">
+            <span class="card-tag">Web</span>
+            <span class="card-tag">Database</span>
+            <span class="card-tag">UI/UX</span>
+          </div>
+          <div class="card-footer">
+            <a class="card-footer-link" href="https://github.com/edonurcahyo/Manajemen-Inventory---Laravel"
+              target="_blank" rel="noopener noreferrer"><span data-i18n="projects.repo">Lihat repositori</span> <span
+                aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
 
-<script src="../js/preloader.js"></script>
-<script src="../js/i18n.js"></script>
-<script src="../js/main.js"></script>
+      <!-- Project 03 -->
+      <article class="project-card reveal" data-category="independent">
+        <a class="project-image-link" href="../assets/Preview project/foodrecipe.png"
+          aria-label="Perbesar pratinjau website resep makanan" data-i18n-aria="projects.image.p3">
+          <div class="project-image-wrap">
+            <img src="../assets/Preview project/foodrecipe.png" alt="Tampilan website resep makanan"
+              data-i18n-alt="projects.image.alt.p3" width="640" height="400" loading="lazy">
+            <span class="img-badge img-badge-num" aria-hidden="true">03</span>
+            <span class="img-badge img-badge-cat" aria-hidden="true" data-i18n="p3.category">Mandiri</span>
+            <span class="img-expand-hint" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <div class="card-body">
+          <span class="card-kicker" data-i18n="p3.category">Proyek Mandiri</span>
+          <h2 data-i18n="p3.title">Basis Data Karakter Blue Archive</h2>
+          <p class="card-desc" data-i18n="p3.desc">Database karakter dengan pencarian dan tampilan informasi
+            terstruktur.</p>
+          <div class="card-tags">
+            <span class="card-tag">PHP</span>
+            <span class="card-tag">MySQL</span>
+            <span class="card-tag">CRUD</span>
+          </div>
+          <div class="card-footer">
+            <a class="card-footer-link" href="https://github.com/edonurcahyo/Food-Recipe-Website" target="_blank"
+              rel="noopener noreferrer"><span data-i18n="projects.repo">Lihat repositori</span> <span
+                aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 04 -->
+      <article class="project-card reveal" data-delay="1" data-category="independent">
+        <a class="project-image-link" href="../assets/Preview project/wifi.png"
+          aria-label="Perbesar pratinjau sistem manajemen WiFi" data-i18n-aria="projects.image.p4">
+          <div class="project-image-wrap">
+            <img src="../assets/Preview project/wifi.png" alt="Tampilan sistem manajemen WiFi"
+              data-i18n-alt="projects.image.alt.p4" width="640" height="400" loading="lazy">
+            <span class="img-badge img-badge-num" aria-hidden="true">04</span>
+            <span class="img-badge img-badge-cat" aria-hidden="true" data-i18n="p4.category">Mandiri</span>
+            <span class="img-expand-hint" aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <div class="card-body">
+          <span class="card-kicker" data-i18n="p4.category">Proyek Mandiri</span>
+          <h2 data-i18n="p4.title">Sistem Manajemen WiFi</h2>
+          <p class="card-desc" data-i18n="p4.desc">Sistem manajemen jaringan dan pengguna dengan dashboard analitik.</p>
+          <div class="card-tags">
+            <span class="card-tag">Laravel</span>
+            <span class="card-tag">MySQL</span>
+            <span class="card-tag">Dashboard</span>
+          </div>
+          <div class="card-footer">
+            <a class="card-footer-link" href="https://github.com/edonurcahyo/Wifi-PTI" target="_blank"
+              rel="noopener noreferrer"><span data-i18n="projects.repo">Lihat repositori</span> <span
+                aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- CTA to Certificates -->
+    <section class="section">
+      <div class="cta-block reveal">
+        <div>
+          <span class="eyebrow" data-i18n="certificates.eyebrow">Pembelajaran &amp; pengembangan</span>
+          <h2 data-i18n="home.new.cert.heading">Perjalanan belajar, selangkah demi selangkah.</h2>
+        </div>
+        <a href="/certificates" class="btn"><span data-i18n="nav.certificates">Sertifikat</span><span class="arrow"
+            aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cell name"><span class="label" data-i18n="tb.name.lbl">Nama</span><span class="value">Hendrikus
+          Christianto N. Olmedo</span></div>
+      <div class="footer-cell"><span class="label" data-i18n="tb.role.lbl">Peran</span><span class="value"
+          data-i18n="tb.role.val">Software / Web Developer</span></div>
+      <div class="footer-cell"><span class="label" data-i18n="contact.lbl.location">Lokasi</span><span class="value"
+          data-i18n="contact.val.location">Surabaya, Indonesia</span></div>
+      <div class="footer-cell"><span class="label" data-i18n="tb.contact.lbl">Kontak</span>
+        <div class="footer-social value"><a href="https://github.com/edonurcahyo" target="_blank"
+            rel="noopener noreferrer">GitHub</a><a href="https://www.instagram.com/edo_nurcahyo/" target="_blank"
+            rel="noopener noreferrer">Instagram</a><a href="mailto:edonurcahyo25@gmail.com">Email</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Navigasi utama" data-i18n-aria="nav.main">
+    <div class="bottom-nav-inner">
+      <a href="/" class="bn-item" aria-label="Beranda" data-i18n-aria="nav.home"><span class="bn-pill"><span
+            class="bn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+            </svg></span><span class="bn-label" data-i18n="nav.home">Beranda</span></span></a>
+      <a href="/projects" class="bn-item is-active" aria-current="page" aria-label="Proyek"
+        data-i18n-aria="nav.projects"><span class="bn-pill"><span class="bn-icon" aria-hidden="true"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="16" rx="2" />
+              <path d="M3 10h18M9 20V10" />
+            </svg></span><span class="bn-label" data-i18n="nav.projects">Proyek</span></span></a>
+      <a href="/certificates" class="bn-item" aria-label="Sertifikat" data-i18n-aria="nav.certificates"><span
+          class="bn-pill"><span class="bn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8">
+              <path d="M7 3h10l3 3v15H4V3z" />
+              <path d="M8 11h8M8 15h5M14 3v4h6" />
+            </svg></span><span class="bn-label" data-i18n="nav.certificates">Sertifikat</span></span></a>
+      <a href="/contact" class="bn-item" aria-label="Kontak" data-i18n-aria="nav.contact"><span class="bn-pill"><span
+            class="bn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m4 7 8 6 8-6" />
+            </svg></span><span class="bn-label" data-i18n="nav.contact">Kontak</span></span></a>
+    </div>
+  </nav>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
 </body>
+
 </html>
