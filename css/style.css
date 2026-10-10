@@ -1902,6 +1902,28 @@ html.is-loading body {
   display: none !important;
 }
 
+.cert-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-2);
+}
+
+.cert-preview img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.cert-preview:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
 .cert-card:hover,
 .certificate-card:hover {
   border-color: var(--line-3);
